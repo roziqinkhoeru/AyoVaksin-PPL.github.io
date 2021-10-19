@@ -60,9 +60,6 @@ a {
 	color: var(--main);
 }
 
-/*************************************/
-/*               INDEX               */
-/*************************************/
 /*navigation*/
 .nav__section {
     width: 100%;
@@ -70,8 +67,12 @@ a {
     background-color: rgba(242, 244, 248, .8);
 }
 
+.navbar-toggler {
+    border: none;
+}
+
 .navbar__expand {
-    height: 90px;
+    padding: 21px 0;
 }
 
 .brand__logo {
@@ -104,12 +105,17 @@ a {
 
     color: var(--white) !important;
     border-radius: 10px;
-    background-color: rgba(37, 44, 93, .8);
+    background-color: var(--dark);
 }
 
 .btn__nav:hover {
-    background-color: var(--dark);
+    background-color: var(--main);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .25);
 }
+
+/*************************************/
+/*               INDEX               */
+/*************************************/
 
 
 /************************************/
@@ -130,3 +136,37 @@ a {
 /******************************************/
 /*               RESPONSIVE               */
 /******************************************/
+@media (min-width: 1441px) {
+}
+
+
+/*=============== tablet view ===============*/
+@media screen and (max-width: 991px) {
+    /*navigation*/
+    .brand__logo {
+        height: 28px;
+    }
+
+    .navbar__expand {
+        padding: 16px 0
+    }
+
+    .navbar__nav {
+        margin-top: 36px;
+    }
+
+    .nav__link {
+        padding: 18px 0;
+    }
+
+    .btn__nav {
+        margin: 30vh 0 0;
+        padding: 12px 20vw !important;
+        align-self: center;
+    }
+}
+
+/*=============== mobile view ===============*/
+@media screen and (max-width: 576px) {
+
+}
