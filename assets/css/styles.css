@@ -73,6 +73,7 @@ a {
     width: 100%;
 
     background-color: rgba(242, 244, 248, .8);
+    backdrop-filter: blur(90px);
 }
 
 .navbar-toggler {
@@ -134,7 +135,7 @@ footer .foot__content p {
 }
 
 .footer__section {
-    padding: 160px 0 24px;
+    padding: 160px 0 8px;
 }
 
 .foot__top {
@@ -146,10 +147,14 @@ footer .foot__content p {
 }
 
 .foot__content {
-    width: 660px;
+    max-width: 660px;
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+.foot__content p {
+    text-align: right;
 }
 
 .btn__saran {
@@ -164,7 +169,41 @@ footer .foot__content p {
 
 .btn__saran:hover {
     color: var(--main);
-    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, .35);
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.4));
+}
+
+.foot__bottom .flex__left {
+    display: flex;
+    align-items: end;
+}
+
+.foot__bottom .flex__right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.foot__icon {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.foot__icon i {
+    color: var(--light);
+    font-size: 21px;
+}
+
+.foot__icon a {
+    transition: all .4s ease;
+}
+
+.foot__icon a:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.45);
+}
+
+.foot__icon .ms {
+    margin-left: 36px;
 }
 
 /*************************************/
@@ -198,7 +237,7 @@ footer .foot__content p {
 
 /*=============== tablet view ===============*/
 @media screen and (max-width: 991px) {
-    /*navigation*/
+    /*========== navigation ==========*/
     .brand__logo {
         height: 28px;
     }
@@ -224,9 +263,59 @@ footer .foot__content p {
         padding: 12px 20vw !important;
         align-self: center;
     }
+
+    /*========== footer ==========*/
+    .foot__content {
+        max-width: 360px;
+    }
+
+    /****************************************/
+    /*               VARIABLE               */
+    /****************************************/
 }
 
 /*=============== mobile view ===============*/
 @media screen and (max-width: 576px) {
+    /*========== footer ==========*/
+    .footer__section {
+        padding-top: 120px;
+    }
 
+    .foot__top .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot__content {
+        max-width: 100%;
+    }
+
+    .foot__content p,
+    .footer__section .font__second {
+        text-align: center;
+    }
+
+    .foot__img {
+        margin-bottom: 48px;
+    }
+
+    .btn__saran {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .foot__bottom .flex__left {
+         align-items: center;
+         justify-content: center;
+    }
+
+    .foot__bottom .flex__right {
+        align-items: center;
+        justify-content: center;
+    }
+
+    /****************************************/
+    /*               VARIABLE               */
+    /****************************************/
 }
