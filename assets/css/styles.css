@@ -276,6 +276,11 @@ footer .foot__content p {
 
 /*=============== mobile view ===============*/
 @media screen and (max-width: 576px) {
+    /*========== general ==========*/
+    p {
+        font-size: 14px;
+    }
+
     /*========== footer ==========*/
     .footer__section {
         padding-top: 120px;
@@ -297,7 +302,7 @@ footer .foot__content p {
     }
 
     .foot__img {
-        margin-bottom: 48px;
+        margin-bottom: 35px;
     }
 
     .btn__saran {
