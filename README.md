@@ -1,5 +1,6 @@
 # AyoVaksin Project (Front End)
-AyoVaksin merupakan aplikasi berbasis web yang digunakan untuk membantu proses vaksinasi dapat berjalan lancar dan mudah untuk mengakses vaksinasi yang tersedia. AyoVaksin ini dibuat dengan **HTML (Hypertext Markup Language)**, **CSS (Cascading Style Sheet)**, **PHP (Hypertext Preprocessor)**, **JavaScript**, **Bootstrap v.5**, **CodeIgniter v4.1.3**,  etc.
+
+AyoVaksin merupakan aplikasi berbasis web yang digunakan untuk membantu proses vaksinasi dapat berjalan lancar dan mudah untuk mengakses vaksinasi yang tersedia. AyoVaksin ini dibuat dengan **HTML (Hypertext Markup Language)**, **CSS (Cascading Style Sheet)**, **PHP (Hypertext Preprocessor)**, **JavaScript**, **Bootstrap v.5**, **CodeIgniter v4.1.3**, etc.
 
 ## Badges
 
@@ -26,14 +27,13 @@ Folder Structure:
 
 ## Teams
 
-- [Dico Aji Prasetyo](https://github.com/DicoAji)
 - [Iwan Suryaningrat](https://github.com/iwansuryaningrat)
 - [Khoeru Roziqin](https://github.com/roziqinkhoeru)
 - [Musa Alfian Maulana](https://github.com/musaalfian)
-- [Rafli Ferdian Ramadhan](https://github.com/RafliFerdian25)
+- [Ronny Dominikus](https://github.com/)
 
 ## Used By
 
-Projek ini ditujukan untuk memenuhi tugas *mini project* pada matakuliah Pengembangan Berbasis Platform Semester 5 Informatika Universitas Diponegoro
+Projek ini ditujukan untuk memenuhi _Tugas Besar_ pada matakuliah Proyek Perangkat Lunak Semester 5 Informatika Universitas Diponegoro
 
-**Sumber Jaya Furniture. Jaya Jaya Jaya!**
+**Ayo Vaksin. Save yourself to save others.**
