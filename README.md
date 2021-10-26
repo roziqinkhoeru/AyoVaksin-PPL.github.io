@@ -16,8 +16,18 @@ Folder Structure:
 ```
 📦summberjaya-furniture-admin.github.io
  ┣ 📂assets
- ┃ ┗ 📂...
+ ┃ ┣ 📂css
+ ┃ ┃ ┗ 📜...
+ ┃ ┣ 📂img
+ ┃ ┃ ┗ 📜...
+ ┃ ┣ 📂js
+ ┃ ┃ ┗ 📜...
+ ┃ ┗ 📂vendor
+ ┃   ┗ 📂...
+ ┣ 📜alur.html
+ ┣ 📜daftar-vaksin.html
  ┣ 📜index.html
+ ┣ 📜kebijakan-privasi.html
  ┗ 📜README.md
 ```
 
