@@ -195,6 +195,7 @@ footer .foot__content p {
     font-size: 14px;
     color: rgba(242, 244, 248, .7);
     transition: all .4s ease;
+    font-weight: 500;
 }
 
 .foot__navlink li a:hover {
