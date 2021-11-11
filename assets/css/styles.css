@@ -35,6 +35,7 @@
 	/*utility*/
     --b-rad: 10px;
     --p-btn: 12px 24px;
+    --shadow: 0 4px 20px 0 rgba(0, 0, 0, .25);
 }
 
 /*********************************************/
@@ -58,15 +59,62 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    font-family: var(--ff-head);
+}
+
+h2 {
+    font-weight: 700;
+    font-family: var(--ff-head);
+}
+
+h3 {
+    font-weight: 700;
+    font-family: var(--ff-head);
+}
+
+h4 {
+    font-weight: 700;
+    font-family: var(--ff-head);
+}
+
+h5 {
+    font-weight: 700;
+    font-family: var(--ff-head);
+}
+
+h6 {
+    font-weight: 700;
+    font-family: var(--ff-head);
+}
+
 .nav__section .active span{
 	color: var(--main);
 }
 
+/* font and color */
 .font__second {
     font-family: var(--ff-head);
     font-weight: 600;
     color: var(--light);
 }
+
+.txt__second {
+    color: var(--second) !important;
+}
+
+.main__btn {
+    border-radius: var(--b-rad);
+    padding: var(--p-btn);
+    background-color: var(--main);
+    color: var(--white);
+    font-family: var(--ff-head);
+    transition: all .4s ease;
+    font-weight: 700;
+}
+
 
 /*========== navigation ==========*/
 .nav__section {
@@ -119,7 +167,7 @@ a {
 
 .btn__nav:hover {
     background-color: var(--main);
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .25);
+    box-shadow: var(--shadow);
 }
 
 /*========== footer ==========*/
@@ -157,19 +205,15 @@ footer .foot__content p {
     text-align: right;
 }
 
-.btn__saran {
-    padding: var(--p-btn);
-    background-color: var(--light);
-    font-weight: 700;
-    font-family: var(--ff-head);
+.btn__saran {    
+    background-color: rgba(255, 255, 255, .7);
     color: var(--main);
-    border-radius: var(--b-rad);
-    transition: all .4s ease;
 }
 
 .btn__saran:hover {
     color: var(--main);
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.4));
+    background-color: rgba(255, 255, 255, .9);
 }
 
 .foot__bottom .flex__left {
@@ -240,6 +284,35 @@ footer .foot__content p {
 /*************************************/
 /*               INDEX               */
 /*************************************/
+/* jumbotron */
+.jumbotron__section .body__content {
+    padding-top: 90px;
+}
+
+.jumbotron__section .row h1 {
+    margin-top: 138px;
+    margin-bottom: 24px;
+}
+
+.jumbotron__section .row p {
+    font-size: 18px;
+}
+
+.jumbotron__btn {
+    margin-top: 48px;
+}
+
+.jumbotron__btn .main__btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: var(--shadow);
+}
+
+.jumbotron__btn .main__btn:hover {
+    color: var(--white);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .45);
+}
+
 .main__content {
     height: 1200px;
 }
