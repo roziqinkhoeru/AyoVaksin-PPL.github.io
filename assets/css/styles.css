@@ -595,10 +595,11 @@ footer .foot__content p {
         margin-top: 36px;
         display: flex;
         width: 100%;
+        background-size: 740px 80px;
     }
-
-    .ideas__btn:hover span {
-        color: var(--main);
+    
+    .ideas__btn:hover {
+        background-position: 400px 0;
     }
 
     .ideas__btn i {
