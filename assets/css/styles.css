@@ -291,7 +291,7 @@ footer .foot__content p {
 }
 
 .jumbotron__section .row h1 {
-    margin-top: 138px;
+    margin-top: 120px;
     margin-bottom: 24px;
 }
 
@@ -341,12 +341,12 @@ footer .foot__content p {
         0 0 3px #fff,
         0 0 6px #fff,
         0 0 9px #fff,
-        0 0 12px #FFF9A6,
+        0 0 12px #fff896,
         0 0 16px #F4EA56,
         0 0 20px #F4EA56,
         0 0 27px #F4EA56,
-        0 0 30px #F4EA56,
-        0 0 36px #F4EA56
+        0 0 30px #faed3a,
+        0 0 36px #faed3a
     ;
     box-shadow: 0px 0px 15px 0px rgba(209, 196, 15, 0.4);
 }
@@ -430,6 +430,11 @@ footer .foot__content p {
 
 /*=============== tablet view ===============*/
 @media screen and (max-width: 991px) {
+    /* general */
+    h1 {
+        font-size: 56px;
+    }
+
     /*========== navigation ==========*/
     .brand__logo {
         height: 28px;
@@ -472,106 +477,36 @@ footer .foot__content p {
     /* jumbotron */
     .jumbotron__section .body__content {
         padding-top: 72px;
+        max-width: 76vw;
+        margin: auto;
     }
 
-    /* sampai sini============================== */
     .jumbotron__section .row h1 {
-        margin-top: 90px;
-        margin-bottom: 24px;
+        margin-top: 84px;
     }
 
-    .jumbotron__section .row p {
-        font-size: 18px;
-    }
-
-    .jumbotron__btn {
-        margin-top: 48px;
-        align-items: center;
-    }
-
-    .jumbotron__btn .main__btn {
-        padding-top: 16px;
-        padding-bottom: 16px;
-        box-shadow: var(--shadow);
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .jumbotron__btn .main__btn:hover {
-        color: var(--white);
-        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .45);
-    }
-
-    .ideas__btn {
-        display: flex;
-        align-items: center;
-        border-radius: 30px;
-        transition: all .5s ease-in-out;
-        position: relative;
-        background: -webkit-linear-gradient(0deg, transparent 50%, var(--light) 50%);
-        background-size: 630px 80px;
-        justify-content: start;
-        padding-right: 28px;
-    }
-
-    .ideas__btn:hover {
-        background-position: 320px 0;
-        box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2),
-                    0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-    }
-
-    .ideas__btn:hover i {
-        color: #D9D48D;
-        text-shadow:
-            0 0 3px #fff,
-            0 0 6px #fff,
-            0 0 9px #fff,
-            0 0 12px #FFF9A6,
-            0 0 16px #F4EA56,
-            0 0 20px #F4EA56,
-            0 0 27px #F4EA56,
-            0 0 30px #F4EA56,
-            0 0 36px #F4EA56
-        ;
-        box-shadow: 0px 0px 15px 0px rgba(209, 196, 15, 0.4);
-    }
-
-    .ideas__btn:hover span {
-        color: var(--main);
+    .jumbotron__section .row p,
+    .jumbotron__btn .main__btn,
+    .ideas__btn span {
+        font-size: 16px;
     }
 
     .ideas__btn i {
-        color: var(--dark);
-        font-size: 30px;
-        padding: 12px;
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
-        border-radius: 50%;
-        background-color: var(--light);
-        margin-right: 24px;
-        transition: all .4s ease;
-    }
-
-    .ideas__btn span {
-        color: rgba(38, 86, 190, .6);
-        font-size: 18px;
-        font-weight: 700;
-        font-family: var(--ff-head);
-        transition: all .4s ease;
+        font-size: 28px;
     }
 
     .jumbotron__img {
-        width: 100%;
-        margin-top: 100px;
-    }
-
-    .main__content {
-        height: 1200px;
+        margin-top: 16px;
     }
 }
 
 /*=============== mobile view ===============*/
 @media screen and (max-width: 576px) {
     /*========== general ==========*/
+    h1 {
+        font-size: 48px;
+    }
+    
     p {
         font-size: 14px;
     }
@@ -631,5 +566,48 @@ footer .foot__content p {
 
     /****************************************/
     /*               VARIABLE               */
-    /****************************************/
+    /****************************************/    
+
+    /*************************************/
+    /*               INDEX               */
+    /*************************************/
+    /* jumbotron */
+    .jumbotron__section .body__content {
+        padding-top: 72px;
+        max-width: 86vw;
+    }
+
+    .jumbotron__section .row h1 {
+        margin-top: 72px;
+    }
+
+    .jumbotron__section .row p {
+        font-size: 14px;
+    }
+
+    .jumbotron__btn .main__btn {
+        font-size: 14px;
+        display: block;
+        text-align: center;
+    }
+
+    .ideas__btn {
+        margin-top: 36px;
+        display: flex;
+        width: 100%;
+    }
+
+    .ideas__btn:hover span {
+        color: var(--main);
+    }
+
+    .ideas__btn i {
+        font-size: 20px;
+        justify-content: start;
+    }
+
+    .ideas__btn span {
+        font-size: 14px;
+        display: block;
+    }
 }
