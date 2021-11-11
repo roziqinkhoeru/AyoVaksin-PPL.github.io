@@ -383,6 +383,29 @@ footer .foot__content p {
     height: 1200px;
 }
 
+/* CIRCLE */
+.circle {
+    position: absolute;
+    background: rgba(38, 86, 190, 0.1);
+    filter: blur(60px);
+
+}
+/* circle 1 */
+.c1 {
+    width: 344px;
+    height: 344px;
+    left: 27px;
+    top: 115px;
+}
+/* circle 2 */
+.c2 {
+    width: 563px;
+    height: 563px;
+    left: 803px;
+    top: 162px;
+}
+
+
 /************************************/
 /*               ALUR               */
 /************************************/
