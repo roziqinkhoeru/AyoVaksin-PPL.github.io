@@ -1,1 +1,49 @@
+@import url(styles.css);
 
+.alur__section {
+    padding: 0 120px;
+    margin: auto;
+}
+
+.alur {
+    padding: 48px 0;
+}
+
+.alur h2 {
+    margin-bottom: 1.5rem;
+    color: var(--main);
+}
+
+.alur__card {
+    border: 3px solid var(--main);
+    padding: 84px;
+    border-radius: 1rem;
+}
+
+.alur__left {
+    border-right: 3px solid var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px 84px 24px 0;
+}
+
+.alur__left i {
+    font-size: 180px;
+    color: var(--main);
+    margin-bottom: 1.5rem;
+}
+
+.alur__right {
+    padding: 24px 0 24px 84px;
+}
+
+.alur__right h5 {
+    margin-bottom: 24px;
+}
+
+.alur__right ol li {
+    margin-bottom: .75rem;
+    font-size: 18px;
+}

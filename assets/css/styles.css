@@ -90,9 +90,23 @@ h6 {
     font-family: var(--ff-head);
 }
 
+/* section */
 .nav__section .active span{
 	color: var(--main);
 }
+
+.header__section {
+    margin: 180px 0 90px;
+}
+
+.header__content {
+    width: 68vw;
+}
+
+.av__y {
+    padding: 84px 0;
+}
+
 
 /* font and color */
 .font__second {
@@ -123,6 +137,7 @@ h6 {
     background-color: rgba(242, 244, 248, .7);
     backdrop-filter: blur(24px);
     z-index: 100;
+    top: 0;
 }
 
 .navbar-toggler {
