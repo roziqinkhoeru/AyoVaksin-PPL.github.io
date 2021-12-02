@@ -382,11 +382,35 @@ footer .foot__content p {
 .check__card {
   background-color: var(--light);
   border-radius: 30px;
-  padding: 40px 100px;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .check__card h4 {
   margin-bottom: 36px;
+}
+
+.check__form {
+  width: 74vw;
+  margin: auto;
+}
+
+.check__form__content {
+  display: flex;
+  align-items: center;
+}
+
+.left__card {
+  flex: 80%;
+}
+
+.right__card {
+  flex: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .form__control {
@@ -399,6 +423,23 @@ footer .foot__content p {
 
 .form__control::placeholder {
   color: rgba(0, 0, 0, 0.4);
+}
+
+.check__submit {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 18px 48px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--ff-head);
+  border-radius: 10px;
+  border: none;
+  transition: all .4s ease-in-out;
+}
+
+.check__submit:hover {
+  background-color: var(--main);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
 }
 
 
@@ -490,6 +531,20 @@ footer .foot__content p {
 
   .jumbotron__img {
     margin-top: 16px;
+  }
+
+  /* check card */
+  .check__form__content {
+    flex-direction: column;
+  }
+
+  .left__card {
+    flex: 100%;
+    margin-bottom: 30px;
+  }
+
+  .right__card {
+    flex: 100%;
   }
 }
 
@@ -602,5 +657,14 @@ footer .foot__content p {
   .ideas__btn span {
     font-size: 14px;
     display: block;
+  }
+
+  /* check card */
+  .form__control {
+    font-size: 16px;
+  }
+
+  .check__submit {
+    font-size: 16px;
   }
 }

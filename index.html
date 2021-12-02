@@ -114,23 +114,23 @@
 		<div class="container">
 			<div class="check__card">
 				<h4 class="text-center">Periksa apakah anda sudah melakukan vaksinasi!</h4>
-				<form action="" method="post">
-					<div class="row">
-						<div class="col-lg-10 col-12">
+				<form action="" method="post" class="check__form">
+					<div class="check__form__content">
+						<div class="left__card">
 							<div class="row g-3">
-								<div class="col">
+								<div class="col-md-4 col-12">
 									<input type="text" class="form-control form__control shadow-none" name="namaLengkap" placeholder="Nama Lengkap" required>
 								</div>
-								<div class="col">
+								<div class="col-md-4 col-12">
 									<input type="text" class="form-control form__control shadow-none" name="nik" placeholder="NIK" required>
 								</div>
-								<div class="col">
+								<div class="col-md-4 col-12">
 									<div class="inr"></div>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-2 col-12">
-							<button></button>
+						<div class="right__card">
+							<input type="submit" name="checkSubmit" class="check__submit" value="Periksa">
 						</div>
 					</div>
 				</form>
