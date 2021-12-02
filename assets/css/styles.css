@@ -378,30 +378,30 @@ footer .foot__content p {
   margin-top: 100px;
 }
 
-.main__content {
-  height: 1200px;
+/* check card */
+.check__card {
+  background-color: var(--light);
+  border-radius: 30px;
+  padding: 40px 100px;
 }
 
-/* CIRCLE */
-.circle {
-  position: absolute;
-  background: rgba(38, 86, 190, 0.1);
-  filter: blur(60px);
+.check__card h4 {
+  margin-bottom: 36px;
 }
-/* circle 1 */
-.c1 {
-  width: 344px;
-  height: 344px;
-  left: 27px;
-  top: 115px;
+
+.form__control {
+  padding: 18px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: var(--ff-head);
 }
-/* circle 2 */
-.c2 {
-  width: 563px;
-  height: 563px;
-  left: 803px;
-  top: 162px;
+
+.form__control::placeholder {
+  color: rgba(0, 0, 0, 0.4);
 }
+
+
 
 /************************************/
 /*               ALUR               */
