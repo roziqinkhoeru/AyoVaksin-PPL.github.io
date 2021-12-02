@@ -54,6 +54,14 @@
     <!-- flaticon bold rounded icon styles -->
     <link rel="stylesheet" href="assets/vendor/icofont/icofont.css" />
     <!-- icofont styles icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font-awesome styles icon -->
 
     <!-- custom styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -63,52 +71,300 @@
     <link rel="icon" href="" />
   </head>
   <body>
-    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh">
-      <a class="btn btn-primary" href="index.html" role="button">Back To Home</a>
-    </div>
+    <!-- navigation -->
+    <div class="nav__section position-fixed">
+      <nav class="navbar navbar-expand-lg navbar-light navbar__expand">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"> <img src="assets/img/logo-nav.svg" alt="ayo-vaksin-logo-nav" class="brand__logo" /></a>
+          <!-- end navbar brand -->
 
-    <div class="container d-flex justify-content-center align-items-center" style="height: 200vh">
-      <section class="main__page">
-        <!-- Judul -->
-        <div class="head__page">
-          <div class="container">
-            <h1>Alur Pendaftaran Vaksin</h1>
+          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fi fi-br-menu-burger"></i>
+          </button>
+          <!-- end menu btn -->
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar__nav ms-auto">
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" aria-current="page" href="index.html"><span>Home</span></a>
+              </li>
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" href="alur.html"><span>Alur</span></a>
+              </li>
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link active" href="daftar-vaksin.html"><span>Daftar Vaksin</span></a>
+              </li>
+              <li class="nav-item nav__item">
+                <a class="nav-link nav__link" href="kebijakan-privasi.html"><span>Kebijakan Privasi</span></a>
+              </li>
+            </ul>
+            <!-- end navbar nav -->
+
+            <div class="navbar-nav">
+              <a href="#" class="nav-link nav__link btn__nav">Login / Register</a>
+            </div>
+            <!-- end navbar nav btn nav -->
           </div>
+          <!-- end nav collapse -->
         </div>
-        <!-- Akhir judul -->
-        <!-- Langkah -->
-        <div class="langkah__page">
-          <div class="container">
-            <!-- Langkah 1 -->
-            <div class="langkah__content">
-              <div class="langkah__section">
-                <div class="row">
-                  <h6>Langkah 1</h6>
-                </div>
-                <div class="card border-primary">
-                  <div class="row">
-                    <div class="col-md-5 col-12 text-center">
-                      <i class="fas fa-user-circle"></i>
-                      <p>Buat Akun</p>
-                      <p>Buat akun AyoVaksin Anda!</p>
-                    </div>
-                    <div class="col-md-7 col-12 text-start">
-                      <h6>Langkah langkah</h6>
-                      <p>
-                        1. Buat akun pada menu Login/Register atau melalui link https://www.ayovaksin.com/login <br />
-                        2. Masukkan nama lengkap anda <br />
-                        3. Masukkan email <br />4. Masukkan password <br />5. Klik Daftar <br />6. Jika sudah memiliki akun, silahkan masuk dengan akun yang sudah ada
-                      </p>
-                    </div>
+        <!-- end container -->
+      </nav>
+      <!-- end nav -->
+    </div>
+    <!-- end nav section -->
+
+    <!-- header section -->
+    <div class="header__section">
+      <div class="container">
+        <div class="header__content">
+          <h1>Cari Sentra Vaksin di Dekatmu</h1>
+        </div>
+      </div>
+    </div>
+    <!-- end header section -->
+
+    <!-- daftar vaksin section -->
+    <div class="av__y">
+      <div class="container">
+        <div class="daftar__section">
+          <div class="row">
+            <!-- daftar 1 -->
+            <div class="col-md-4 col-12 mb-5">
+              <div class="card">
+                <img src="assets/img/sentra_vaksin1.svg" class="card-img-top" alt="Gambar Sentra Vaksin" />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">UPTD Puskesmas Grobogan</h5>
+                  <div class="card-text">
+                    <p><i class="far fa-calendar-alt"></i> 14 - 17 September 2021</p>
+                    <p><i class="fas fa-shield-virus"></i> Vaksin Sinovac</p>
+                    <p><i class="fas fa-user"></i> 12 Tahun Keatas</p>
+                  </div>
+                  <div class="button__card text-center">
+                    <button type="button" class="btn btn-primary">Lihat Detail</button>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Akhir langkah 1 -->
+            <!-- end daftar 1 -->
+            <!-- daftar 2 -->
+            <div class="col-md-4 col-12 mb-5">
+              <div class="card">
+                <img src="assets/img/sentra_vaksin2.svg" class="card-img-top" alt="Gambar Sentra Vaksin" />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">UPTD Puskesmas Pemalang</h5>
+                  <div class="card-text">
+                    <p><i class="far fa-calendar-alt"></i> 14 - 17 September 2021</p>
+                    <p><i class="fas fa-shield-virus"></i> Vaksin Sinovac</p>
+                    <p><i class="fas fa-user"></i> 12 Tahun Keatas</p>
+                  </div>
+                  <div class="button__card text-center">
+                    <button type="button" class="btn btn-primary">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end daftar 2 -->
+            <!-- daftar 3 -->
+            <div class="col-md-4 col-12 mb-5">
+              <div class="card">
+                <img src="assets/img/sentra_vaksin1.svg" class="card-img-top" alt="Gambar Sentra Vaksin" />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">UPTD Puskesmas Grobogan</h5>
+                  <div class="card-text">
+                    <p><i class="far fa-calendar-alt"></i> 14 - 17 September 2021</p>
+                    <p><i class="fas fa-shield-virus"></i> Vaksin Sinovac</p>
+                    <p><i class="fas fa-user"></i> 12 Tahun Keatas</p>
+                  </div>
+                  <div class="button__card text-center">
+                    <button type="button" class="btn btn-primary">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end daftar 3 -->
+            <!-- daftar 4 -->
+            <div class="col-md-4 col-12 mb-5">
+              <div class="card">
+                <img src="assets/img/sentra_vaksin1.svg" class="card-img-top" alt="Gambar Sentra Vaksin" />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">UPTD Puskesmas Grobogan</h5>
+                  <div class="card-text">
+                    <p><i class="far fa-calendar-alt"></i> 14 - 17 September 2021</p>
+                    <p><i class="fas fa-shield-virus"></i> Vaksin Sinovac</p>
+                    <p><i class="fas fa-user"></i> 12 Tahun Keatas</p>
+                  </div>
+                  <div class="button__card text-center">
+                    <button type="button" class="btn btn-primary">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end daftar 4 -->
+            <!-- daftar 5 -->
+            <div class="col-md-4 col-12 mb-5">
+              <div class="card">
+                <img src="assets/img/sentra_vaksin2.svg" class="card-img-top" alt="Gambar Sentra Vaksin" />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">UPTD Puskesmas Pemalang</h5>
+                  <div class="card-text">
+                    <p><i class="far fa-calendar-alt"></i> 14 - 17 September 2021</p>
+                    <p><i class="fas fa-shield-virus"></i> Vaksin Sinovac</p>
+                    <p><i class="fas fa-user"></i> 12 Tahun Keatas</p>
+                  </div>
+                  <div class="button__card text-center">
+                    <button type="button" class="btn btn-primary">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end daftar 5 -->
+            <!-- daftar 6 -->
+            <div class="col-md-4 col-12 mb-5">
+              <div class="card">
+                <img src="assets/img/sentra_vaksin1.svg" class="card-img-top" alt="Gambar Sentra Vaksin" />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">UPTD Puskesmas Grobogan</h5>
+                  <div class="card-text">
+                    <p><i class="far fa-calendar-alt"></i> 14 - 17 September 2021</p>
+                    <p><i class="fas fa-shield-virus"></i> Vaksin Sinovac</p>
+                    <p><i class="fas fa-user"></i> 12 Tahun Keatas</p>
+                  </div>
+                  <div class="button__card text-center">
+                    <button type="button" class="btn btn-primary">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end daftar 6 -->
+            <!-- daftar 7 -->
+            <div class="col-md-4 col-12 mb-5">
+              <div class="card">
+                <img src="assets/img/sentra_vaksin1.svg" class="card-img-top" alt="Gambar Sentra Vaksin" />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">UPTD Puskesmas Grobogan</h5>
+                  <div class="card-text">
+                    <p><i class="far fa-calendar-alt"></i> 14 - 17 September 2021</p>
+                    <p><i class="fas fa-shield-virus"></i> Vaksin Sinovac</p>
+                    <p><i class="fas fa-user"></i> 12 Tahun Keatas</p>
+                  </div>
+                  <div class="button__card text-center">
+                    <button type="button" class="btn btn-primary">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end daftar 7 -->
+            <!-- daftar 8 -->
+            <div class="col-md-4 col-12 mb-5">
+              <div class="card">
+                <img src="assets/img/sentra_vaksin2.svg" class="card-img-top" alt="Gambar Sentra Vaksin" />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">UPTD Puskesmas Pemalang</h5>
+                  <div class="card-text">
+                    <p><i class="far fa-calendar-alt"></i> 14 - 17 September 2021</p>
+                    <p><i class="fas fa-shield-virus"></i> Vaksin Sinovac</p>
+                    <p><i class="fas fa-user"></i> 12 Tahun Keatas</p>
+                  </div>
+                  <div class="button__card text-center">
+                    <button type="button" class="btn btn-primary">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end daftar 8 -->
+            <!-- daftar 9 -->
+            <div class="col-md-4 col-12 mb-5">
+              <div class="card">
+                <img src="assets/img/sentra_vaksin1.svg" class="card-img-top" alt="Gambar Sentra Vaksin" />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">UPTD Puskesmas Grobogan</h5>
+                  <div class="card-text">
+                    <p><i class="far fa-calendar-alt"></i> 14 - 17 September 2021</p>
+                    <p><i class="fas fa-shield-virus"></i> Vaksin Sinovac</p>
+                    <p><i class="fas fa-user"></i> 12 Tahun Keatas</p>
+                  </div>
+                  <div class="button__card text-center">
+                    <button type="button" class="btn btn-primary">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end daftar 9 -->
           </div>
         </div>
-        <!-- Akhir langkah -->
-      </section>
+      </div>
     </div>
+    <!-- end daftar vaksin section -->
+    <!-- footer -->
+    <footer class="foot" style="background: linear-gradient(0deg, rgba(38, 86, 190, 0.9), rgba(38, 86, 190, 0.9)), url(assets/img/bg-footer.png)">
+      <div class="container">
+        <div class="footer__section">
+          <div class="row foot__top">
+            <div class="col-md-4 col-sm-12 flex">
+              <a href="index.html">
+                <img class="foot__img" src="assets/img/logo-foot.svg" alt="..." />
+              </a>
+            </div>
+            <!-- end img foot -->
+
+            <div class="col-md-8 col-sm-12 d-flex justify-content-end">
+              <div class="foot__content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget in faucibus sed ullamcorper risus aliquam senectus nulla. Nullam lacus donec gravida massa a malesuada rhoncus. In sit orci, massa mollis. Condimentum aliquam,
+                  amet, duis blandit orci, imperdiet eget sollicitudin elementum.
+                </p>
+
+                <a class="main__btn btn__saran mt-3" href="#">Kotak Saran</a>
+              </div>
+            </div>
+            <!-- end desc foot -->
+          </div>
+          <!-- end foot top -->
+
+          <hr style="border: 1px solid rgba(242, 244, 248, 1)" />
+
+          <div class="row pt-2 foot__bottom">
+            <div class="col-md-6 col-sm-12 flex__left">
+              <ul class="foot__navlink">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="alur.html">Alur</a>
+                </li>
+                <li>
+                  <a href="daftar-vaksin.html">Daftar Vaksin</a>
+                </li>
+                <li>
+                  <a href="kebijakan-privasi.html">Kebijakan Privasi</a>
+                </li>
+              </ul>
+              <p class="font__second">Save yourself to save others.</p>
+            </div>
+            <!-- end left -->
+
+            <div class="col-md-6 col-sm-12 flex__right">
+              <div class="foot__icon mb-3">
+                <a href="#" class="d-flex align-items-center">
+                  <img src="assets/img/instagram-icon.svg" height="20px" alt="..." />
+                </a>
+                <a href="#" class="d-flex align-items-center ms">
+                  <i class="icofont-linkedin"></i>
+                </a>
+                <a href="#" class="d-flex align-items-center ms">
+                  <i class="icofont-youtube-play"></i>
+                </a>
+              </div>
+              <p class="font__second" style="font-size: 14px">© AyoVaksin. All rights reserved.</p>
+            </div>
+            <!-- end right -->
+          </div>
+          <!-- end foot bottom -->
+        </div>
+        <!-- end footer section -->
+      </div>
+      <!-- end container -->
+    </footer>
+    <!-- end footer -->
   </body>
 </html>
