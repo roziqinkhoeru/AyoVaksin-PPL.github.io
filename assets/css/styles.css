@@ -434,15 +434,13 @@ footer .foot__content p {
   font-family: var(--ff-head);
   border-radius: 10px;
   border: none;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .check__submit:hover {
   background-color: var(--main);
-  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-
-
 
 /************************************/
 /*               ALUR               */

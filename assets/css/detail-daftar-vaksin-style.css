@@ -1,3 +1,4 @@
-.gambar {
-  width: 20rem;
+.gambar__section img {
+  height: 398px;
+  border-radius: 15px;
 }
