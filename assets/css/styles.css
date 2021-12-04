@@ -881,6 +881,10 @@ footer .foot__content p {
   }
 
   /* check card */
+  .check__form {
+    padding-top: 12px;
+  }
+
   .form__control {
     font-size: 16px;
   }
@@ -895,6 +899,11 @@ footer .foot__content p {
   }
 
   /* help */
+  .help__card {
+    padding: 48px 40px;
+    height: 49rem;
+  }
+
   .help__img {
     width: 54vw;
   }
@@ -911,5 +920,20 @@ footer .foot__content p {
   .service__body i,
   .service__body span {
     font-size: 14px;
+  }
+}
+
+/* mobile view s */
+@media screen and (max-width: 375px) {
+  /*************************************/
+  /*               INDEX               */
+  /*************************************/
+  /* help  */
+  .help__card {
+    height: 45rem;
+  }
+
+  .help__img {
+    display: none;
   }
 }
