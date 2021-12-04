@@ -134,6 +134,12 @@ h6 {
   font-weight: 700;
 }
 
+.hyphens__auto {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 /*========== navigation ==========*/
 .nav__section {
   width: 100%;
@@ -639,6 +645,15 @@ footer .foot__content p {
     max-width: 100%;
     margin-bottom: 2rem;
   }
+
+  /* help */
+  .help__card {
+    height: 56rem;
+  }
+
+  .help__img {
+    right: 7%;
+  }
 }
 
 /*=============== mobile view ===============*/
@@ -783,5 +798,10 @@ footer .foot__content p {
   /* news */
   .news__img {
     height: 270px;
+  }
+
+  /* help */
+  .help__img {
+    width: 54vw;
   }
 }
