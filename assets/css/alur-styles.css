@@ -12,6 +12,7 @@
 .alur h2 {
   margin-bottom: 1.5rem;
   color: var(--main);
+  font-size: 24px;
 }
 
 .alur__card {

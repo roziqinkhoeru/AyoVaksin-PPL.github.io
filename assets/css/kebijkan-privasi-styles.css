@@ -1,0 +1,28 @@
+.deskripsi {
+  padding: 0 1rem;
+  margin: auto;
+}
+.warna {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+.kebijakan__section {
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+.kebijakan__deskripsi {
+  margin-left: 12px;
+}
+.kebijakan__content {
+}
+.judul__pertanyaan h3 {
+  font-size: 38px;
+  font-weight: bold;
+}
+.judul {
+  text-align: center;
+  margin: auto;
+}
+.kebijakan__judul h5 {
+  font-size: 18px;
+}

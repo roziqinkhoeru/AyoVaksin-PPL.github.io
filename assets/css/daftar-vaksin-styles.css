@@ -8,18 +8,25 @@
   width: 50rem;
 }
 .daftar__section {
-  width: 1044px;
-  height: 1311px;
+  width: 90%;
   margin: auto;
 }
 .kartu {
-  width: 300px;
-  height: 389px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 15px;
 }
 .card-text p {
   font-family: "Work Sans";
   font-size: 14px;
   font-weight: normal;
+  margin-bottom: 12px;
 }
 .kartu__text {
   margin-top: 18px;
@@ -27,4 +34,13 @@
 }
 .title__text {
   margin-left: 24px;
+}
+.card-text span {
+  margin-left: 12px;
+}
+.padding {
+  padding-top: 1.5rem;
+}
+.button__jarak {
+  margin: 18px 0 2rem;
 }
