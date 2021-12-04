@@ -1,5 +1,6 @@
 @import url(styles.css);
 
+/* alur section */
 .alur__section {
   padding: 0 120px;
   margin: auto;
@@ -28,6 +29,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 24px 84px 24px 0;
+  text-align: center;
 }
 
 .alur__left i {
@@ -46,9 +48,58 @@
 
 .alur__right ol li {
   margin-bottom: 0.75rem;
-  font-size: 18px;
+  font-size: var(--fz-2);
 }
 .alur__right ul li {
   margin-bottom: 0.75rem;
-  font-size: 18px;
+  font-size: var(--fz-2);
+  list-style-type: square;
+}
+
+/* tablet */
+@media screen and (max-width: 991px) {
+  .alur__section {
+    padding: 0;
+    width: 96%;
+  }
+
+  .alur {
+    padding: 40px 0;
+  }
+
+  .alur__card {
+    padding: 40px;
+  }
+
+  .alur__left {
+    padding: 24px 24px 24px 0;
+  }
+
+  .alur__left i {
+    font-size: 144px;
+  }
+
+  .alur__right {
+    padding: 24px 0 24px 24px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+  .alur {
+    padding: 30px 0;
+  }
+
+  .alur__left {
+    padding: 0 0 24px;
+    border: none;
+  }
+
+  .alur__left i {
+    font-size: 120px;
+  }
+
+  .alur__right {
+    padding: 0;
+  }
 }

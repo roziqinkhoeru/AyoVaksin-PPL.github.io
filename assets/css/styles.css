@@ -42,6 +42,10 @@
 /*********************************************/
 /*               GENERAL STYLE               */
 /*********************************************/
+html {
+  background-color: var(--light);
+}
+
 * {
   font-family: var(--ff-body);
 
@@ -102,7 +106,10 @@ h6 {
 }
 
 .header__content {
-  width: 68vw;
+  width: 64vw;
+  max-width: 940px;
+  text-align: center;
+  margin: auto;
 }
 
 .av__y {
@@ -111,6 +118,14 @@ h6 {
 
 .title__mb {
   margin-bottom: 36px;
+}
+
+.header__mb {
+  margin-bottom: 24px;
+}
+
+.desc__header {
+  font-size: 18px;
 }
 
 /* font and color */
@@ -312,7 +327,7 @@ footer .foot__content p {
   font-size: 2rem;
 
   position: fixed;
-  right: .75rem;
+  right: 1.5rem;
   bottom: 6rem;
 
   display: flex;
@@ -657,6 +672,11 @@ i.scroll__up:hover {
 
 /*=============== tablet view ===============*/
 @media screen and (max-width: 991px) {
+  /* variable */
+  :root {
+    --fz-2: 16px;
+  }
+
   /* general */
   h1 {
     font-size: 56px;
@@ -673,6 +693,18 @@ i.scroll__up:hover {
 
   .title__mb {
     margin-bottom: 1.5rem;
+  }
+
+  .header__section {
+    margin: 144px 0 72px;
+  }
+
+  .header__content {
+    width: 80vw;
+  }
+
+  .desc__header {
+    font-size: 16px;
   }
 
   /*========== navigation ==========*/
@@ -711,8 +743,8 @@ i.scroll__up:hover {
   .scroll__up {
     font-size: 1.875rem;
 
-    right: 42px;
-    bottom: 4.25rem;
+    bottom: 3.5rem;
+    right: .75rem;
 
     padding: 7px;
 
@@ -824,6 +856,18 @@ i.scroll__up:hover {
     margin-bottom: 1rem;
   }
 
+  .desc__header {
+    font-size: 14px;
+  }
+
+  .header__section {
+    margin: 120px 0 60px;
+  }
+
+  .header__content {
+    width: 90vw;
+  }
+
   /*========== footer ==========*/
   .footer__section {
     padding-top: 120px;
@@ -874,12 +918,6 @@ i.scroll__up:hover {
 
   .foot__bottom .flex__left .font__second {
     font-size: 14px;
-  }
-
-  /* scroll up */
-  .scroll__up {
-    right: 1.875rem;
-    bottom: 3.5rem;
   }
 
   /****************************************/
