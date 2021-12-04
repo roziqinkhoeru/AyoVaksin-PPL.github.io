@@ -472,6 +472,26 @@ footer .foot__content p {
   font-size: var(--fz-2);
 }
 
+.vaksin {
+  background-color: var(--light);
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vaksin__img {
+  height: 60px;
+  margin: 1rem 2.5rem;
+}
+
+.vaksin__tt {
+  height: 100%;
+}
+
+
+
 /* help */
 .help__card {
   border-radius: var(--b-lg-rad);
@@ -518,6 +538,71 @@ footer .foot__content p {
   width: 300px;
   bottom: 0;
   position: absolute;
+}
+
+/* our history */
+.ourhis__head {
+  width: 56vw;
+  max-width: 52.5rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.ourhis__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.service__card {
+  padding: 12px 36px;
+  border-radius: var(--b-rad);
+  width: 22rem;
+  margin: .75rem 1.5rem;
+}
+
+.service__body {
+  margin-top: 9px;
+}
+
+.service__body i {
+  color: var(--white);
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+.service__body span {
+  color: var(--white);
+}
+
+.ourhis__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourhis__btn span {
+  font-weight: bold;
+  font-family: var(--ff-head);
+  margin-right: 6px;
+  transition: var(--global-trans);
+}
+
+.ourhis__btn i {
+  font-size: 27px;
+  transition: var(--global-trans);
+}
+
+.ourhis__btn a:hover span {
+  color: var(--main);
+}
+
+.ourhis__btn a:hover i {
+  transform: translateX(4px);
+  color: var(--main);
 }
 
 /************************************/
@@ -654,6 +739,11 @@ footer .foot__content p {
   .help__img {
     right: 7%;
   }
+
+  /* our history */
+  .ourhis__head {
+    width: 100%;
+  }
 }
 
 /*=============== mobile view ===============*/
@@ -671,6 +761,10 @@ footer .foot__content p {
 
   h2 {
     font-size: 36px;
+  }
+
+  h5 {
+    font-size: 16px;
   }
 
   p {
@@ -803,5 +897,19 @@ footer .foot__content p {
   /* help */
   .help__img {
     width: 54vw;
+  }
+
+  /* our history */
+  .ourhis__head {
+    margin-bottom: 1.5rem;
+  }
+
+  .service__card {
+    width: 100%;
+  }
+
+  .service__body i,
+  .service__body span {
+    font-size: 14px;
   }
 }
