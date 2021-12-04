@@ -307,6 +307,38 @@ footer .foot__content p {
   margin-left: 36px;
 }
 
+/* scroll up */
+.scroll__up {
+  font-size: 2rem;
+
+  position: fixed;
+  right: .75rem;
+  bottom: 6rem;
+
+  display: flex;
+
+  padding: 9px;
+
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  pointer-events: none;
+
+  opacity: 0;
+  color: var(--dark);
+  border-radius: .75rem;
+  background-color: var(--white);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+
+  align-items: center;
+
+  z-index: 999;
+}
+
+i.scroll__up:hover {
+  color: var(--main);
+  box-shadow: 0 0 20px 2.5px rgba(0, 0, 0, .3);
+}
+
 /*************************************/
 /*               INDEX               */
 /*************************************/
@@ -674,6 +706,18 @@ footer .foot__content p {
   .foot__content {
     max-width: 360px;
   }
+  
+  /* scroll up */
+  .scroll__up {
+    font-size: 1.875rem;
+
+    right: 42px;
+    bottom: 4.25rem;
+
+    padding: 7px;
+
+    border-radius: 10px;
+  }
 
   /****************************************/
   /*               VARIABLE               */
@@ -830,6 +874,12 @@ footer .foot__content p {
 
   .foot__bottom .flex__left .font__second {
     font-size: 14px;
+  }
+
+  /* scroll up */
+  .scroll__up {
+    right: 1.875rem;
+    bottom: 3.5rem;
   }
 
   /****************************************/
