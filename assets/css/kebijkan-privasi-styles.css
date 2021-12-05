@@ -1,28 +1,37 @@
-.deskripsi {
-  padding: 0 1rem;
-  margin: auto;
-}
-.warna {
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 16px;
-}
+@import url(styles.css);
+
 .kebijakan__section {
-  margin-bottom: 2rem;
-  padding: 0 2rem;
-}
-.kebijakan__deskripsi {
-  margin-left: 12px;
-}
-.kebijakan__content {
-}
-.judul__pertanyaan h3 {
-  font-size: 38px;
-  font-weight: bold;
-}
-.judul {
-  text-align: center;
+  width: 76vw;
+  max-width: 1080px;
   margin: auto;
 }
-.kebijakan__judul h5 {
-  font-size: 18px;
+
+.title__kebijakan {
+  margin-bottom: 12px;
+}
+
+.kebijakan__deskripsi {
+  margin-left: 1.5rem;
+}
+
+.kebijakan__deskripsi ol li {
+  line-height: 2;
+}
+
+/* tablet */
+@media screen and (max-width: 991px) {
+  .kebijakan__section {
+    width: 84vw;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+  .kebijakan__section {
+    width: 90vw;
+  }
+
+  .kebijakan__deskripsi ol li {
+    font-size: 14px;
+  }
 }

@@ -126,6 +126,7 @@ h6 {
 
 .desc__header {
   font-size: 18px;
+  color: rgba(0, 0, 0, .8);
 }
 
 /* font and color */
@@ -358,17 +359,9 @@ i.scroll__up:hover {
 /*               INDEX               */
 /*************************************/
 /* jumbotron */
-.jumbotron__section .body__content {
-  padding-top: 90px;
-}
-
 .jumbotron__section .row h1 {
   margin-top: 120px;
   margin-bottom: 24px;
-}
-
-.jumbotron__section .row p {
-  font-size: 18px;
 }
 
 .jumbotron__btn {
@@ -536,8 +529,6 @@ i.scroll__up:hover {
 .vaksin__tt {
   height: 100%;
 }
-
-
 
 /* help */
 .help__card {
@@ -760,7 +751,6 @@ i.scroll__up:hover {
   /*************************************/
   /* jumbotron */
   .jumbotron__section .body__content {
-    padding-top: 72px;
     max-width: 76vw;
     margin: auto;
   }
@@ -769,7 +759,6 @@ i.scroll__up:hover {
     margin-top: 84px;
   }
 
-  .jumbotron__section .row p,
   .jumbotron__btn .main__btn,
   .ideas__btn span {
     font-size: 16px;
@@ -929,16 +918,11 @@ i.scroll__up:hover {
   /*************************************/
   /* jumbotron */
   .jumbotron__section .body__content {
-    padding-top: 72px;
     max-width: 86vw;
   }
 
   .jumbotron__section .row h1 {
     margin-top: 72px;
-  }
-
-  .jumbotron__section .row p {
-    font-size: 14px;
   }
 
   .jumbotron__btn .main__btn {
