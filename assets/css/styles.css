@@ -129,6 +129,11 @@ h6 {
   color: rgba(0, 0, 0, .8);
 }
 
+.head__av {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 /* font and color */
 .font__second {
   font-family: var(--ff-head);
@@ -855,6 +860,10 @@ i.scroll__up:hover {
 
   .header__content {
     width: 90vw;
+  }
+
+  .head__av {
+    margin-bottom: 2.5rem;
   }
 
   /*========== footer ==========*/
