@@ -26,7 +26,7 @@
     <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Alur | AyoVaksin</title>
+    <title>Periksa Status Vaksin | AyoVaksin</title>
 
     <!-- apple touch icon -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/icon/apple-touch-icon-57x57.png" />
@@ -65,14 +65,14 @@
 
     <!-- custom styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/alur-styles.css" />
+    <link rel="stylesheet" href="assets/css/periksa-belum-styles.css" />
 
     <!-- Favicon  -->
     <link rel="icon" href="assets/img/icon/favicon.ico" />
   </head>
   <body>
     <!-- navigation -->
-    <div class="nav__section position-sticky">
+    <div class="nav__section position-fixed">
       <nav class="navbar navbar-expand-lg navbar-light navbar__expand">
         <div class="container">
           <a class="navbar-brand" href="index.html"> <img src="assets/img/logo-nav.svg" alt="ayo-vaksin-logo-nav" class="brand__logo" /></a>
@@ -89,7 +89,7 @@
                 <a class="nav-link nav__link" aria-current="page" href="index.html"><span>Home</span></a>
               </li>
               <li class="nav-item nav__item">
-                <a class="nav-link nav__link active" href="alur.html"><span>Alur</span></a>
+                <a class="nav-link nav__link" href="alur.html"><span>Alur</span></a>
               </li>
               <li class="nav-item nav__item">
                 <a class="nav-link nav__link" href="daftar-vaksin.html"><span>Daftar Vaksin</span></a>
@@ -116,124 +116,35 @@
     <!-- header section -->
     <div class="header__section">
       <div class="container">
-        <div class="header__content">
-          <h1 class="header__mb">Alur Pendaftaran Vaksin</h1>
-          <p class="desc__header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate veritatis quod doloremque aut iure corporis perspiciatis pariatur quaerat, optio, voluptatibus harum quidem.</p>
+        <div class="header__content__kiri">
+          <h1 class="header__mb">Selamat anda telah melakukan vaksinasi!</h1>
         </div>
-        <!-- end header content -->
       </div>
-      <!-- end container -->
     </div>
     <!-- end header section -->
 
-    <!-- alur section -->
+    <!-- status section -->
     <div class="av__y">
       <div class="container">
-        <div class="alur__section">
-          <!-- alur1 -->
-          <div class="alur">
-            <h2>Langkah 1</h2>
-            <div class="alur__card">
-              <div class="row">
-                <!-- left -->
-                <div class="col-md-5 col-12">
-                  <div class="alur__left">
-                    <i class="fas fa-user-circle"></i>
-                    <h4>Buat Akun</h4>
-                    <p>Buat akun AyoVaksin Anda!</p>
-                  </div>
-                </div>
-
-                <!-- right -->
-                <div class="col-md-7 col-12">
-                  <div class="alur__right">
-                    <h5>Langkah - langkah:</h5>
-                    <ol>
-                      <li>
-                        Buat akun pada menu Login/Register atau melalui link <span><a href="#">disini.</a></span>
-                      </li>
-                      <li>Masukkan nama lengkap anda</li>
-                      <li>Masukkan email</li>
-                      <li>Masukkan password</li>
-                      <li>Klik Daftar</li>
-                      <li>Jika sudah memiliki akun, silahkan masuk dengan akun yang sudah ada</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-              <!-- end row -->
+        <div class="status__section">
+          <div class="row status__warp">
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+              <h4 class="mb-4">Vaksin 1</h4>
+              <div class="status__card"></div>
             </div>
-            <!-- end alur card -->
-          </div>
-          <!-- end alur1 -->
-
-          <!-- alur2 -->
-          <div class="alur">
-            <h2>Langkah 2</h2>
-            <div class="alur__card">
-              <div class="row">
-                <div class="col-md-5 col-12">
-                  <div class="alur__left">
-                    <i class="far fa-edit"></i>
-                    <h4>Lengkapi Data</h4>
-                    <p>Lengkapi data pribadi Anda!</p>
-                  </div>
-                </div>
-                <div class="col-md-7 col-12">
-                  <div class="alur__right">
-                    <h5>Langkah - langkah:</h5>
-                    <ol>
-                      <li>Masukkan NIK (Nomor Induk Keluarga)</li>
-                      <li>Masukkan nomor KK (Kartu Keluarga)</li>
-                      <li>Masukkan tanggal lahir</li>
-                      <li>Pilih jenis kelamin</li>
-                      <li>Masukkan usia Anda</li>
-                      <li>Masukkan alamat tempat tinggal saat ini</li>
-                      <li>Isikan kode pos Anda</li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+              <h4 class="mb-4">Vaksin 2</h4>
+              <div class="status__card"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+              <h4 class="mb-4">Vaksin 3</h4>
+              <div class="status__card"></div>
             </div>
           </div>
-          <!-- end alur2 -->
-
-          <!-- alur3 -->
-          <div class="alur">
-            <h2>Langkah 3</h2>
-            <div class="alur__card">
-              <div class="row">
-                <div class="col-md-5 col-12">
-                  <div class="alur__left">
-                    <i class="fas fa-calendar-alt"></i>
-                    <h4>Atur Jadwal</h4>
-                    <p>Sesuaikan jadwal vaksin Anda!</p>
-                  </div>
-                </div>
-                <div class="col-md-7 col-12">
-                  <div class="alur__right">
-                    <h5>Langkah - langkah:</h5>
-                    <ol>
-                      <li>Disediakan berbagai informasi mengenai pelaksanaan vaksinasi (sentra vaksin), silahkan pilih sesuai dengan kebutuhan Anda</li>
-                      <li>Setiap sentra vaksin memuat informasi sebagai berikut :</li>
-                      <ul>
-                        <li>Tanggal pelaksaan vaksin</li>
-                        <li>Nama vaksin</li>
-                        <li>Target penerima vaksin</li>
-                      </ul>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end alur3 -->
         </div>
-        <!-- end alur section -->
       </div>
-      <!-- end container -->
     </div>
-    <!-- end alur section -->
+    <!-- end status section -->
 
     <!-- footer -->
     <footer class="foot" style="background: linear-gradient(0deg, rgba(38, 86, 190, 0.9), rgba(38, 86, 190, 0.9)), url(assets/img/bg-footer.png)">

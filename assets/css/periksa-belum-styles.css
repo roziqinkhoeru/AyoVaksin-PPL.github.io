@@ -1,0 +1,28 @@
+.header__content__kiri {
+  width: 64vw;
+  max-width: 940px;
+  text-align: left;
+  padding-top: 24px;
+}
+.status__card {
+  height: 400px;
+  border-radius: 15px;
+  background-color: var(--light);
+}
+.status__section {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.status__warp {
+  justify-content: center;
+}
+
+/* tablet */
+@media screen and (max-width: 991px) {
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+}
