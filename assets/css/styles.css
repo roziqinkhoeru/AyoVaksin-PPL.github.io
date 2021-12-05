@@ -329,7 +329,7 @@ footer .foot__content p {
 
   position: fixed;
   right: 1.5rem;
-  bottom: 6rem;
+  bottom: 3rem;
 
   display: flex;
 
@@ -734,7 +734,7 @@ i.scroll__up:hover {
   .scroll__up {
     font-size: 1.875rem;
 
-    bottom: 3.5rem;
+    bottom: 2.5rem;
     right: .75rem;
 
     padding: 7px;
