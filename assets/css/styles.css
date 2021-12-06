@@ -171,6 +171,12 @@ h6 {
   top: 0;
 }
 
+.nav__fluid {
+  max-width: 82rem;
+  width: 92vw;
+  margin: auto;
+}
+
 .navbar-toggler {
   border: none;
 }
@@ -239,7 +245,7 @@ footer .foot__content p {
 }
 
 .foot__img {
-  height: 44px;
+  max-height: 44px;
 }
 
 .foot__content {
@@ -372,6 +378,7 @@ i.scroll__up:hover {
 .jumbotron__btn {
   margin-top: 48px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .jumbotron__btn .main__btn {
@@ -699,7 +706,7 @@ i.scroll__up:hover {
   }
 
   .header__content {
-    width: 80vw;
+    width: 86%;
   }
 
   .desc__header {
@@ -781,6 +788,11 @@ i.scroll__up:hover {
   }
 
   /* check card */
+  .check__form {
+    width: 100%;
+    min-width: 0;
+  }
+
   .check__form__content {
     flex-direction: column;
   }
@@ -788,6 +800,7 @@ i.scroll__up:hover {
   .left__card {
     flex: 100%;
     margin-bottom: 30px;
+    padding: 0 1.125rem;
   }
 
   .right__card {
@@ -862,7 +875,7 @@ i.scroll__up:hover {
   }
 
   .header__content {
-    width: 90vw;
+    width: 90%;
   }
 
   .head__av {
@@ -891,6 +904,7 @@ i.scroll__up:hover {
 
   .foot__img {
     margin-bottom: 35px;
+    height: 2.25rem;
   }
 
   .btn__saran {

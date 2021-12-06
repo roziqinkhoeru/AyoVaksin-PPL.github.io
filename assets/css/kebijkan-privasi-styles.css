@@ -1,8 +1,7 @@
 @import url(styles.css);
 
 .kebijakan__section {
-  width: 76vw;
-  max-width: 1080px;
+  width: 90%;
   margin: auto;
 }
 
@@ -20,17 +19,10 @@
 
 /* tablet */
 @media screen and (max-width: 991px) {
-  .kebijakan__section {
-    width: 84vw;
-  }
 }
 
 /* mobile */
 @media screen and (max-width: 576px) {
-  .kebijakan__section {
-    width: 90vw;
-  }
-
   .kebijakan__deskripsi ol li {
     font-size: 14px;
   }
