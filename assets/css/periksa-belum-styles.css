@@ -1,28 +1,27 @@
+@import url(styles.css);
+
 .header__content__kiri {
-  width: 64vw;
-  max-width: 940px;
+  padding-top: 3rem;
+  max-width: 900px;
   text-align: left;
-  padding-top: 24px;
-}
-.status__card {
-  height: 400px;
-  border-radius: 15px;
-  background-color: var(--light);
 }
 .status__section {
-  margin: auto;
+  padding: 24px;
+  align-items: center;
+}
+.deskripsi {
   text-align: center;
-  width: 90%;
+  margin-bottom: 14px;
+  max-width: 550px;
   margin: auto;
 }
-.status__warp {
-  justify-content: center;
+.tombol {
+  color: #fff;
+  background-color: var(--second);
+  border-color: var(--second);
+  transition: var(--global-trans);
 }
-
-/* tablet */
-@media screen and (max-width: 991px) {
-}
-
-/* mobile */
-@media screen and (max-width: 576px) {
+.tombol:hover {
+  color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
