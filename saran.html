@@ -65,7 +65,6 @@
 
     <!-- custom styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/alur-styles.css" />
 
     <!-- Favicon  -->
     <link rel="icon" href="assets/img/icon/favicon.ico" />
@@ -128,8 +127,25 @@
     <div class="av__y">
         <div class="container">
             <div class="saran__section">
-                <form action="" method="post">
-                    
+                <form action="" method="post" class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control form__control shadow-none" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control form__control shadow-none" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control form__control shadow-none" id="phone" placeholder="Your Phone" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control form__control shadow-none" id="subject" placeholder="Your Subject" required>
+                    </div>
+                    <div class="col-12">
+                        <textarea name="pesan" id="pesan" cols="30" rows="10" class="form-control form__control" placeholder="Your Text..."></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
                 </form>
             </div>
         </div>
