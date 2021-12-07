@@ -116,6 +116,10 @@ h6 {
   padding: 84px 0;
 }
 
+.av__b {
+  padding-bottom: 84px;
+}
+
 .title__mb {
   margin-bottom: 36px;
 }
@@ -659,15 +663,32 @@ i.scroll__up:hover {
 /*               SARAN               */
 /************************************/
 .saran__section {
-  padding: 3.5rem;
-  box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .1);
-  width: 72%;
+  width: 68%;
   margin: auto;
   border-radius: var(--b-lg-rad);
 }
 
 .saran__section .form__control {
   background-color: var(--light);
+}
+
+.saran__section textarea {
+  width: 100%; 
+}
+
+.kp__btn {
+  border-radius: var(--b-rad);
+  background-color: var(--main);
+  padding: 12px 30px;
+  color: var(--white);
+  font-family: var(--ff-head);
+  font-weight: 600;
+  transition: var(--global-trans);
+}
+
+.kp__btn:hover {
+  color: var(--white);
+  background-color: var(--dark);
 }
 
 /******************************************/
@@ -828,6 +849,13 @@ i.scroll__up:hover {
 
   /* our history */
   .ourhis__head {
+    width: 100%;
+  }
+
+  /*************************************/
+  /*               SARAN               */
+  /*************************************/
+  .saran__section {
     width: 100%;
   }
 }
@@ -1018,6 +1046,13 @@ i.scroll__up:hover {
   .service__body i,
   .service__body span {
     font-size: 14px;
+  }
+
+  /*************************************/
+  /*               SARAN               */
+  /*************************************/
+  .saran__section {
+    width: 90%;
   }
 }
 
