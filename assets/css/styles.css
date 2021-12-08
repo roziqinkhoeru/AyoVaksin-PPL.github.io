@@ -30,6 +30,7 @@
   --main: rgba(38, 86, 190, 1);
   --dark: rgba(37, 44, 93, 1);
   --second: rgba(248, 166, 27, 1);
+  --second2: rgba(128, 128, 128);
 
   /*utility*/
   --b-rad: 10px;
@@ -92,8 +93,9 @@ h5 {
 }
 
 h6 {
-  font-weight: 700;
-  font-family: var(--ff-head);
+  font-weight: 600;
+  font-family: var(--ff-body);
+  font-size: 18px;
 }
 
 /* section */
@@ -668,7 +670,8 @@ i.scroll__up:hover {
   border-radius: var(--b-lg-rad);
 }
 
-.saran__section .form__control {
+.saran__section .form__control,
+.signin__section .form__control {
   background-color: var(--light);
 }
 
@@ -690,6 +693,52 @@ i.scroll__up:hover {
   color: var(--white);
   background-color: var(--dark);
 }
+
+/****************************************/
+/*               REGISTER               */
+/****************************************/
+.signin__section {
+  padding: 60px 100px;
+  box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .1);
+  border-radius: var(--b-lg-rad);
+}
+
+.masuk__btn {
+  font-weight: 600;
+  color: var(--main);
+  transition: var(--global-trans);
+}
+
+.masuk__btn:hover {
+  color: var(--second);
+}
+
+.icon__wrap {
+  width: 30px;
+  height: 30px;
+  background-color: var(--main);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon__wrap i {
+  color: var(--white);
+  font-size: 16px;
+}
+
+.icon__wrap2 {
+  /* height: 36px;
+  width: 36px; */
+  padding: 5px;
+  border-radius: 30px;
+  border: 3px solid var(--main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /******************************************/
 /*               RESPONSIVE               */
@@ -858,6 +907,10 @@ i.scroll__up:hover {
   .saran__section {
     width: 100%;
   }
+
+  /****************************************/
+  /*               REGISTER               */
+  /****************************************/
 }
 
 /*=============== mobile view ===============*/
@@ -878,6 +931,10 @@ i.scroll__up:hover {
   }
 
   h5 {
+    font-size: 16px;
+  }
+
+  h6 {
     font-size: 16px;
   }
 
@@ -1054,6 +1111,10 @@ i.scroll__up:hover {
   .saran__section {
     width: 90%;
   }
+
+  /****************************************/
+  /*               REGISTER               */
+  /****************************************/
 }
 
 /* mobile view s */
