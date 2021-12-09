@@ -1,0 +1,109 @@
+.card__profile {
+  height: 556px;
+  background-color: var(--white);
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 15%);
+  border-radius: 15px;
+  padding: 70px;
+  max-width: 974px;
+  margin: auto;
+  margin-bottom: 84px;
+}
+.profile__section {
+  width: 96%;
+}
+.profile__kiri {
+  border-right: 2px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 14.5rem;
+}
+.profile__saya {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.icon__text p {
+  font-family: var(--ff-head);
+  font-size: 18px;
+  font-weight: bold;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.3);
+}
+.icon__text :hover {
+  color: var(--main);
+  transition: var(--global-trans);
+}
+.profile__tengah {
+  padding-left: 3rem;
+}
+.profil__kanan {
+}
+.id__section {
+  margin-bottom: 24px;
+}
+
+.judul {
+  margin-bottom: 24px;
+}
+.icon__section {
+  text-align: center;
+  margin: auto;
+  width: 86vw;
+  margin-top: 90px;
+}
+.bg__icon {
+  width: 150px;
+  height: 150px;
+  background-color: var(--main);
+  border-radius: 100%;
+  margin: auto;
+}
+.icon__content {
+  margin: auto;
+  padding: 1rem;
+}
+.icon__content i {
+  color: var(--white);
+  font-size: 100px;
+}
+.title__profile {
+  margin-top: 28px;
+}
+.title__profile p {
+  font-family: var(--ff-body);
+  font-size: var(--fz-2);
+}
+
+.label p {
+  font-family: var(--ff-body);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+  .profile__kiri {
+    padding: 0 0 3rem;
+    border: none;
+  }
+  .profile__tengah {
+    padding-left: 0;
+    text-align: left;
+  }
+  .profile__kanan {
+    padding-left: 0;
+    text-align: left;
+  }
+  .card__profile {
+    height: 932px;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 991px) {
+  .profile__kanan {
+    padding-left: 0;
+    text-align: left;
+  }
+}
