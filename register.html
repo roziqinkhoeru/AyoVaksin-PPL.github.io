@@ -130,19 +130,38 @@
           <div class="row">
             <div class="col-12">
               <form action="" method="post" class="row g-3 mb-4">
-                <div class="col-sm-6 co-12 my-2">
+
+                <div class="col-12 mt-2 mb-4">
+                  <div class="row">
+                    <div class="col-sm-4 col-12 m-auto">
+                      <label for="namaInstansi" class="form-label form__label mt-2 mb-sm-3 mb-2 d-block text-center">Kategori Akun</label>
+                      <select id="selectCategory" class="form-select form__control shadow-none">
+                        <option selected value="except" disabled>Pilih Kategori Akun</option>
+                        <option value="peserta">Peserta</option>
+                        <option value="penyedia">Penyedia</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 co-12 my-2 nama__peserta d-none">
                   <label for="namaDepan" class="form-label form__label mt-2 mb-sm-3 mb-2">Nama Depan</label>
                   <input type="text" class="form-control form__control shadow-none" id="namaDepan" placeholder="Masukkan Nama Depan" required>
                 </div>
                 
-                <div class="col-sm-6 col-12 my-2">
+                <div class="col-sm-6 col-12 my-2 nama__peserta d-none">
                   <label for="namaBelakang" class="form-label form__label mt-2 mb-sm-3 mb-2">Nama Belakang</label>
                   <input type="text" class="form-control form__control shadow-none" id="namaBelakang" placeholder="Masukkan Nama Belakang" required>
                 </div>
 
+                <div class="col-12 my-2 instansi d-none">
+                  <label for="namaInstansi" class="form-label form__label mt-2 mb-sm-3 mb-2">Nama Instansi</label>
+                  <input type="text" class="form-control form__control shadow-none" id="namaInstansi" placeholder="Masukkan Nama Instansi" required>
+                </div>
+
                 <div class="col-12 my-2">
                   <label for="email" class="form-label form__label mt-2 mb-sm-3 mb-2">Email</label>
-                  <input type="email" class="form-control form__control shadow-none" id="email" placeholder="Masukkan Alamat Emal" required>
+                  <input type="email" class="form-control form__control shadow-none" id="email" placeholder="Masukkan Alamat Email" required>
                 </div>
 
                 <div class="col-12 my-2">
@@ -250,5 +269,22 @@
 
     <script src="assets/js/scripts.js"></script>
     <!-- Custom scripts -->
+
+    <script>
+      // categoryAccount
+      function categoryAccount() {
+        var categry = $("#selectCategory").val();
+
+        if (categry == "penyedia") {
+          $(".instansi").removeClass('d-none');
+          $(".nama__peserta").addClass('d-none');
+        } else {
+          $(".nama__peserta").removeClass('d-none');
+          $(".instansi").addClass('d-none');
+        }
+      }
+
+      $("#selectCategory").change(categoryAccount);
+    </script>
   </body>
 </html>
