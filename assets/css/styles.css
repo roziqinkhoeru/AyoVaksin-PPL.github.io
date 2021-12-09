@@ -778,6 +778,7 @@ i.scroll__up:hover {
   height: 100%;
   width: 72%;
   margin: auto;
+  padding: 0 12px;
 }
 
 .left__login .mb-4 p {
@@ -814,7 +815,7 @@ i.scroll__up:hover {
 
 .signin__section {
   margin: auto;
-  width: 80%;
+  width: 72%;
 }
 
 /******************************************/
@@ -992,6 +993,9 @@ i.scroll__up:hover {
   /****************************************/
   /*               REGISTER               */
   /****************************************/
+  .signin__section {
+    width: 84%;
+  }
 }
 
 /*=============== mobile view ===============*/
@@ -1202,8 +1206,9 @@ i.scroll__up:hover {
   /****************************************/
   /*               REGISTER               */
   /****************************************/
-  .left__login {
-    width: 90%;
+  .left__login ,
+  .signin__section {
+    width: 78%;
   }
 
   .left__login .mb-4 p {
@@ -1215,7 +1220,8 @@ i.scroll__up:hover {
     font-size: 1rem;
   }
 
-  .left__login form input {
+  .left__login form input,
+  .signin__section .row form .form__control {
     font-size: 14px;
   }
 }
