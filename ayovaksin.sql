@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Des 2021 pada 02.37
+-- Waktu pembuatan: 09 Des 2021 pada 15.29
 -- Versi server: 10.4.21-MariaDB
 -- Versi PHP: 8.0.12
 
@@ -39,7 +39,9 @@ CREATE TABLE `calon_penerima_vaksin` (
   `no_telp` varchar(13) NOT NULL,
   `alamat` varchar(255) NOT NULL,
   `kode_pos` int(11) NOT NULL,
-  `id_login` int(11) NOT NULL
+  `id_login` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -55,8 +57,16 @@ CREATE TABLE `kotak_saran` (
   `no_telp` varchar(13) NOT NULL,
   `subject` varchar(50) NOT NULL,
   `pesan` longtext NOT NULL,
-  `created_at` datetime NOT NULL
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `kotak_saran`
+--
+
+INSERT INTO `kotak_saran` (`id_saran`, `nama`, `email`, `no_telp`, `subject`, `pesan`, `created_at`, `updated_at`) VALUES
+(1, 'Iwan Suryaningrat', 'iwan.suryaningrat28@gmail.com', '0', 'Saran', 'ini pesan', '2021-12-09 08:03:56', '2021-12-09 08:03:56');
 
 -- --------------------------------------------------------
 
@@ -66,7 +76,6 @@ CREATE TABLE `kotak_saran` (
 
 CREATE TABLE `pendaftaran` (
   `id_pendaftaran` int(11) NOT NULL,
-  `stok` int(11) NOT NULL,
   `tanggal_pendaftaran` datetime NOT NULL,
   `id_vaksin` int(11) NOT NULL,
   `creted_at` datetime NOT NULL,
@@ -87,7 +96,9 @@ CREATE TABLE `penyedia_layanan` (
   `no_telp` varchar(13) NOT NULL,
   `alamat` varchar(255) NOT NULL,
   `kode_pos` int(11) NOT NULL,
-  `id_login` int(11) NOT NULL
+  `id_login` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -100,6 +111,14 @@ CREATE TABLE `role` (
   `id_role` int(11) NOT NULL,
   `role` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `role`
+--
+
+INSERT INTO `role` (`id_role`, `role`) VALUES
+(1, 'penyedia'),
+(2, 'user');
 
 -- --------------------------------------------------------
 
@@ -137,8 +156,10 @@ CREATE TABLE `tiket` (
 CREATE TABLE `users` (
   `id_login` int(11) NOT NULL,
   `nama` varchar(50) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `id_role` int(11) NOT NULL
+  `id_role` int(11) NOT NULL,
+  `created_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -154,6 +175,8 @@ CREATE TABLE `vaksin` (
   `tanggal_vaksinasi` date NOT NULL,
   `id_penyedia` int(11) NOT NULL,
   `kuota` int(11) NOT NULL,
+  `stok` int(11) NOT NULL,
+  `ketentuan` varchar(255) NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -215,6 +238,8 @@ ALTER TABLE `tiket`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id_login`),
+  ADD UNIQUE KEY `id_login` (`id_login`),
+  ADD UNIQUE KEY `id_login_2` (`id_login`),
   ADD KEY `role` (`id_role`);
 
 --
@@ -222,6 +247,7 @@ ALTER TABLE `users`
 --
 ALTER TABLE `vaksin`
   ADD PRIMARY KEY (`id_vaksin`),
+  ADD UNIQUE KEY `id_vaksin` (`id_vaksin`),
   ADD KEY `penyedia` (`id_penyedia`);
 
 --
@@ -238,7 +264,7 @@ ALTER TABLE `calon_penerima_vaksin`
 -- AUTO_INCREMENT untuk tabel `kotak_saran`
 --
 ALTER TABLE `kotak_saran`
-  MODIFY `id_saran` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_saran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `penyedia_layanan`
@@ -250,7 +276,7 @@ ALTER TABLE `penyedia_layanan`
 -- AUTO_INCREMENT untuk tabel `role`
 --
 ALTER TABLE `role`
-  MODIFY `id_role` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_role` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `sertifikat`
