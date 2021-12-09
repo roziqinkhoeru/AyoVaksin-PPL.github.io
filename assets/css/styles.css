@@ -215,7 +215,7 @@ h6 {
 
 .btn__nav {
   margin-left: 30px;
-  padding: var(--p-btn) !important;
+  padding: 12px 36px !important;
 
   transition: var(--global-trans);
 
