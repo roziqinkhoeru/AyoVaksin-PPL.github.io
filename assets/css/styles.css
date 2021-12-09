@@ -147,6 +147,10 @@ h6 {
   color: var(--light);
 }
 
+.txt__main {
+  color: var(--main) !important;
+}
+
 .txt__second {
   color: var(--second) !important;
 }
@@ -409,6 +413,22 @@ i.scroll__up:hover {
 
 .back__home:hover i {
   color: var(--dark);
+}
+
+.back__tHome {
+  font-size: var(--fz-2);
+  color: var(--white);
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  padding: 0 0 2px;
+  border-bottom: 2px solid var(--white);
+  transition: var(--global-trans);
+}
+
+.back__tHome:hover {
+  color: var(--second);
+  border-bottom: 2px solid var(--second);
 }
 
 /*************************************/
@@ -766,6 +786,9 @@ i.scroll__up:hover {
 .right__signin {
   height: 100%;
   background-color: var(--main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form__label {
@@ -775,6 +798,17 @@ i.scroll__up:hover {
 
 .left__signin form input {
   font-size: 1rem;
+}
+
+.glass__signin {
+  width: 48%;
+  /* height: 72%; */
+  padding: 3rem;
+  border-radius: var(--b-lg-rad);
+  background-color: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(2rem);
+  display: flex;
+  align-items: flex-end;
 }
 
 /******************************************/
@@ -1168,12 +1202,12 @@ i.scroll__up:hover {
 
   .left__signin .mb-4 p {
     font-size: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: 2.5rem;
   }
 
   .form__label {
     font-size: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
   }
 
   .left__signin form input {
