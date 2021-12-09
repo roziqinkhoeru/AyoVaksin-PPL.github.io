@@ -730,6 +730,7 @@ i.scroll__up:hover {
 }
 
 .saran__section .form__control,
+.login__section .form__control,
 .signin__section .form__control {
   background-color: var(--light);
 }
@@ -756,7 +757,7 @@ i.scroll__up:hover {
 /**********************************************/
 /*               REGISTER/LOGIN               */
 /**********************************************/
-.signin__section {
+.login__section {
   min-height: 100vh;
 }
 
@@ -770,7 +771,7 @@ i.scroll__up:hover {
   color: var(--second);
 }
 
-.left__signin {
+.left__login {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -779,11 +780,11 @@ i.scroll__up:hover {
   margin: auto;
 }
 
-.left__signin .mb-4 p {
+.left__login .mb-4 p {
   font-size: 18px;
 }
 
-.right__signin {
+.right__login {
   height: 100%;
   background-color: var(--main);
   display: flex;
@@ -794,21 +795,26 @@ i.scroll__up:hover {
 .form__label {
   font-size: 18px;
   font-weight: 600;
+  color: rgba(0, 0, 0, .8);
 }
 
-.left__signin form input {
+.left__login form input {
   font-size: 1rem;
 }
 
-.glass__signin {
+.glass__login {
   width: 48%;
-  /* height: 72%; */
   padding: 3rem;
   border-radius: var(--b-lg-rad);
   background-color: rgba(255, 255, 255, .2);
   backdrop-filter: blur(2rem);
   display: flex;
   align-items: flex-end;
+}
+
+.signin__section {
+  margin: auto;
+  width: 80%;
 }
 
 /******************************************/
@@ -1196,21 +1202,20 @@ i.scroll__up:hover {
   /****************************************/
   /*               REGISTER               */
   /****************************************/
-  .left__signin {
+  .left__login {
     width: 90%;
   }
 
-  .left__signin .mb-4 p {
+  .left__login .mb-4 p {
     font-size: 1rem;
     margin-bottom: 2.5rem;
   }
 
   .form__label {
     font-size: 1rem;
-    margin-bottom: 0;
   }
 
-  .left__signin form input {
+  .left__login form input {
     font-size: 14px;
   }
 }

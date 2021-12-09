@@ -127,87 +127,39 @@
     <div class="av__b">
       <div class="container">
         <div class="signin__section">
-          <div class="row g-3">
-            <div class="col-sm-6 col-12">
+          <div class="row">
+            <div class="col-12">
               <form action="" method="post" class="row g-3 mb-4">
-                <div class="col-12 my-2">
-                    <input type="text" class="form-control form__control shadow-none" id="name" placeholder="Nama Lengkap" required>
+                <div class="col-sm-6 co-12 my-2">
+                  <label for="namaDepan" class="form-label form__label mt-2 mb-sm-3 mb-2">Nama Depan</label>
+                  <input type="text" class="form-control form__control shadow-none" id="namaDepan" placeholder="Masukkan Nama Depan" required>
                 </div>
-                <div class="col-12 my-2">
-                    <input type="email" class="form-control form__control shadow-none" id="email" placeholder="Email" required>
+                
+                <div class="col-sm-6 col-12 my-2">
+                  <label for="namaBelakang" class="form-label form__label mt-2 mb-sm-3 mb-2">Nama Belakang</label>
+                  <input type="text" class="form-control form__control shadow-none" id="namaBelakang" placeholder="Masukkan Nama Belakang" required>
                 </div>
+
                 <div class="col-12 my-2">
-                    <input type="password" class="form-control form__control shadow-none" id="password" placeholder="Password" required>
+                  <label for="email" class="form-label form__label mt-2 mb-sm-3 mb-2">Email</label>
+                  <input type="email" class="form-control form__control shadow-none" id="email" placeholder="Masukkan Email" required>
                 </div>
+
+                <div class="col-12 my-2">
+                  <label for="password" class="form-label form__label mt-2 mb-sm-3 mb-2">Password</label>
+                  <input type="password" class="form-control form__control shadow-none" id="password" placeholder="Masukkan Password" required>
+                </div>
+
+                <div class="col-12 my-2">
+                  <label for="konfirmPassword" class="form-label form__label mt-2 mb-sm-3 mb-2">Konfirmasi Password</label>
+                  <input type="password" class="form-control form__control shadow-none" id="confirmPassword" placeholder="Masukkan Konfirmasi Password" required>
+                </div>
+
                 <div class="col-12 mt-4 d-flex justify-content-center align-items-center">
-                    <input type="submit" class="btn kp__btn" value="Daftar">
+                  <input type="submit" class="btn kp__btn" value="Daftar">
                 </div>
               </form>
               <p class="text-center">Sudah punya akun AyoVaksin? <a href="login-akun.html" class="masuk__btn">Masuk</a></p>
-            </div>
-
-            <div class="col-sm-6 col-12">
-              <div class="row">
-                <!-- step1 -->
-                <div>
-                  <div class="row">
-                    <div class="col-2">
-                      <div class="d-flex align-items-center justify-content-center">
-                        <div class="icon__wrap2">
-                          <div class="icon__wrap">
-                            <i class="far fa-user d-flex align-items-center"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-10">
-                      <h6>Akun</h6>
-                      <p>Daftar atau masuk akun AyoVaksin untuk mengakses informasi mengenai vaksin Anda.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- end step1 -->
-
-                <!-- step2 -->
-                <div>
-                  <div class="row">
-                    <div class="col-2">
-                      <div class="d-flex align-items-center justify-content-center">
-                        <div class="icon__wrap2">
-                          <div class="icon__wrap">
-                            <i class="far fa-file-alt d-flex align-items-center"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-10">
-                      <h6>Lengkapi Data</h6>
-                      <p>Lengkapi formulir dengan mengisikan data diri Anda.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- end step2 -->
-
-                <!-- step3 -->
-                <div>
-                  <div class="row">
-                    <div class="col-2">
-                      <div class="d-flex align-items-center justify-content-center">
-                        <div class="icon__wrap2">
-                          <div class="icon__wrap">
-                            <i class="far fa-map d-flex align-items-center"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-10">
-                      <h6>Atur Jadwal</h6>
-                      <p>Pilih jadwal dan lokasi vaksin Anda sesuai dengan jadwal yang tersedia.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- end step3 -->
-              </div>
             </div>
           </div> <!-- end row -->
         </div> <!-- end sign in section -->
