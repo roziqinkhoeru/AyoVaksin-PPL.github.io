@@ -37,6 +37,28 @@
   font-weight: 700;
   margin-bottom: 18px;
   font-family: var(--ff-head);
+  display: flex;
+  align-items: center;
+}
+
+.kuota__status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  margin-left: 12px;
+}
+
+.kuota__status.s__blue {
+  background-color: var(--main);
+}
+
+.kuota__status.s__orange {
+  background-color: var(--second);
+}
+
+.kuota__status.s__red {
+  background-color: rgba(209, 0, 0, 1);
 }
 
 .kartu__desc {
@@ -75,11 +97,46 @@
   border-radius: var(--b-rad);
   transition: var(--global-trans);
   text-align: center;
+  outline: none;
+  border: none;
 }
 
 .kbtn:hover {
   color: var(--white);
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, .4);
+}
+
+/* modal */
+.modal__content {
+  outline: none;
+  border: none;
+  border-radius: var(--b-rad);
+}
+
+.jadwal__content {
+  text-align: center;
+}
+.tabel__section {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 18px;
+}
+.tabel__content {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.jadwal__content p {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: var(--ff-head);
+}
+
+.btn__av {
+  padding: 10px 30px;
+  font-size: 18px;
 }
 
 /* tablet */
@@ -91,6 +148,20 @@
   .kartu {
     margin: 0;
   }
+
+  /* modal */
+  .btn__av {
+    padding: 9px 24px;
+    font-size: 16px;
+  }
+
+  .jadwal__content p {
+    font-size: 27px;
+  }
+
+  .tabel__content {
+    font-size: 1rem;
+  }
 }
 
 /* mobile */
@@ -101,5 +172,18 @@
 
   .kartu {
     margin: 0 .875rem;
+  }
+
+  /* modal */
+  .btn__av {
+    padding: 6px 24px;
+  }
+
+  .jadwal__content p {
+    font-size: 24px;
+  }
+
+  .tabel__content {
+    font-size: 14px;
   }
 }
