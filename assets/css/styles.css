@@ -151,6 +151,14 @@ h6 {
   color: var(--second) !important;
 }
 
+.txt__second2 {
+  color: var(--second2) !important;
+}
+
+.txt__dark {
+  color: var(--dark) !important;
+}
+
 .main__btn {
   border-radius: var(--b-rad);
   padding: var(--p-btn);
@@ -694,13 +702,11 @@ i.scroll__up:hover {
   background-color: var(--dark);
 }
 
-/****************************************/
-/*               REGISTER               */
-/****************************************/
+/**********************************************/
+/*               REGISTER/LOGIN               */
+/**********************************************/
 .signin__section {
-  padding: 60px 100px;
-  box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .1);
-  border-radius: var(--b-lg-rad);
+  min-height: 100vh;
 }
 
 .masuk__btn {
@@ -713,32 +719,32 @@ i.scroll__up:hover {
   color: var(--second);
 }
 
-.icon__wrap {
-  width: 30px;
-  height: 30px;
+.left__signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 72%;
+  margin: auto;
+}
+
+.left__signin .mb-4 p {
+  font-size: 18px;
+}
+
+.right__signin {
+  height: 100%;
   background-color: var(--main);
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.icon__wrap i {
-  color: var(--white);
-  font-size: 16px;
+.form__label {
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.icon__wrap2 {
-  /* height: 36px;
-  width: 36px; */
-  padding: 5px;
-  border-radius: 30px;
-  border: 3px solid var(--main);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.left__signin form input {
+  font-size: 1rem;
 }
-
 
 /******************************************/
 /*               RESPONSIVE               */
@@ -1115,6 +1121,23 @@ i.scroll__up:hover {
   /****************************************/
   /*               REGISTER               */
   /****************************************/
+  .left__signin {
+    width: 90%;
+  }
+
+  .left__signin .mb-4 p {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  .form__label {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .left__signin form input {
+    font-size: 14px;
+  }
 }
 
 /* mobile view s */
