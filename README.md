@@ -13,6 +13,7 @@ Folder Structure:
 
 ```
 📦summberjaya-furniture-admin.github.io
+ ┣ 📂.vscode
  ┣ 📂assets
  ┃ ┣ 📂css
  ┃ ┃ ┗ 📜...
@@ -24,14 +25,26 @@ Folder Structure:
  ┃   ┗ 📂...
  ┣ 📜alur.html
  ┣ 📜daftar-vaksin.html
+ ┣ 📜form-penyedia-vaksin.html
+ ┣ 📜form-peserta-vaksin.html
  ┣ 📜index.html
  ┣ 📜kebijakan-privasi.html
- ┗ 📜README.md
+ ┣ 📜login-akun.html
+ ┣ 📜periksa-belum.html
+ ┣ 📜periksa-sudah.html
+ ┣ 📜profil-akun.html
+ ┣ 📜profil-edit.html
+ ┣ 📜README.md
+ ┣ 📜register.html
+ ┣ 📜riwayat.html
+ ┗ 📜saran.html
 ```
 
 ## 🎯 Features
 
 - Responsives all devices
+- Easy to use
+- Modern Design
 
 ## 👨‍💻 Teams
 
