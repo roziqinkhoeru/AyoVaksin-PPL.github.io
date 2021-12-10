@@ -56,6 +56,16 @@
   list-style-type: square;
 }
 
+.link__disini {
+  transition: var(--global-trans);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.link__disini:hover {
+  color: blue;
+}
+
 /* faq section */
 .faq__section {
   width: 84%;
