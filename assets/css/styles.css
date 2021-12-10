@@ -799,6 +799,10 @@ i.scroll__up:hover {
   color: rgba(0, 0, 0, .8);
 }
 
+.form__check__label {
+  font-size: var(--fz-2);
+}
+
 .left__login form input {
   font-size: 1rem;
 }

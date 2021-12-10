@@ -116,41 +116,77 @@
     <div class="header__section">
       <div class="container">
         <div class="header__content">
-          <h1 class="header__mb">Perluas Vaksinasi</h1>
-          <p class="desc__header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate veritatis quod doloremque aut iure corporis perspiciatis pariatur quaerat, optio, voluptatibus harum quidem.</p>
+          <h1 class="header__mb">Form Mitra Vaksin</h1>
+          <p class="desc__header">Bantu kami untuk meperluas dan mempercepat vaksinasi di Indonesia agar semua orang dapat terhindar dari Covid-19.</p>
         </div> <!-- end header content -->
       </div> <!-- end container -->
     </div>
     <!-- end header section -->
 
-    <!-- saran section -->
+    <!-- form section -->
     <div class="av__b">
       <div class="container">
-        <div class="saran__section">
-          <form action="" method="post" class="row g-3">
-              <div class="col-sm-6 my-2">
-                  <input type="text" class="me-lg-2 me-sm-1 me-0 form-control form__control shadow-none" id="name" placeholder="Nama Lengkap" required>
-              </div>
-              <div class="col-sm-6 my-2">
-                  <input type="email" class="ms-lg-2 ms-sm-1 ms-0 form-control form__control shadow-none" id="email" placeholder="Email" required>
-              </div>
-              <div class="col-sm-6 my-2">
-                  <input type="text" class="me-lg-2 me-sm-1 me-0 form-control form__control shadow-none" id="phone" placeholder="Nama Perusahaan" required>
-              </div>
-              <div class="col-sm-6 my-2">
-                <input type="text" class="ms-lg-2 ms-sm-1 ms-0 form-control form__control shadow-none" id="email" placeholder="Nomor Telepon" required>
-              </div>
-              <div class="col-12 my-2 ps-sm-0 ps-auto">
-                  <input type="text" class="ms-lg-2 ms-sm-1 ms-0 form-control form__control shadow-none" id="email" placeholder="Alamat" required>
-              </div>
-              <div class="col-12 mt-4 d-flex justify-content-center align-items-center">
-                  <input type="submit" class="btn kp__btn" value="Kirim Pesan">
-              </div>
-          </form>
-        </div>
-      </div>
+        <div class="signin__section">
+          <div class="row">
+            <div class="col-12">
+              <form action="" method="post" class="row g-3 mb-4">
+
+                <div class="co-12 my-2">
+                  <label for="namaLengkap" class="form-label form__label mt-2 mb-sm-3 mb-2">Nama Lengkap</label>
+                  <input type="text" class="form-control form__control shadow-none" id="namaLengkap" placeholder="Masukkan Nama Lengkap" required>
+                </div>
+
+                <div class="co-12 my-2">
+                  <label for="namaInstansi" class="form-label form__label mt-2 mb-sm-3 mb-2">Nama Instansi</label>
+                  <input type="text" class="form-control form__control shadow-none" id="namaInstansi" placeholder="Masukkan Nama Instansi" required>
+                </div>
+
+                <div class="col-12 my-2">
+                    <label for="tglPelaksanaan" class="form-label form__label mt-2 mb-sm-3 mb-2">Tanggal Pelaksanaan</label>
+                    <input type="date" class="form-control form__control shadow-none" id="tglPelaksanaan" required>
+                </div>
+
+                <div class="col-12 my-2">
+                    <label for="noTelepon" class="form-label form__label mt-2 mb-sm-3 mb-2">Nomor Telepon</label>
+                    <input type="text" class="form-control form__control shadow-none" id="noTelepon" placeholder="Masukkan Nomor Telepon Aktif" required>
+                </div>
+
+                <div class="col-12 my-2">
+                    <label for="namaVaksinasi" class="form-label form__label mt-2 mb-sm-3 mb-2">Nama Vaksinasi</label>
+                    <input type="text" class="form-control form__control shadow-none" id="namaVaksinasi" placeholder="Masukkan Nama Vaksinasi" required>
+                </div>
+
+                <div class="col-12 my-2">
+                  <label for="jenisVaksin" class="form-label form__label mt-2 mb-sm-3 mb-2">Jenis Vaksin</label>
+                  <select class="form-select shadow-none form__control">
+                    <option selected disabled>Pilih Jenis Vaksin</option>
+                    <option value="astrazeneca">AstraZeneca Vaccine</option>
+                    <option value="sinovac">Sinovac-CoronaVac</option>
+                    <option value="pfizer">Pfizer-BioNTech</option>
+                    <option value="moderna">Moderna Vaccine</option>
+                  </select>
+                </div>
+
+                <div class="col-12 my-2">
+                  <label for="slot" class="form-label form__label mt-2 mb-sm-3 mb-2">Jumlah Slot</label>
+                  <input type="number" class="form-control form__control shadow-none" id="slot" placeholder="Masukkan Jumlah Slot" required>
+                </div>
+
+                <div class="col-12 my-2">
+                    <label for="alamat" class="form-label form__label mt-2 mb-sm-3 mb-2">Alamat Lengkap</label>
+                    <textarea name="alamat" id="alamat" cols="30" rows="5" class="form-control form__control shadow-none" placeholder="Masukkan alamat lengkap..."></textarea>
+                </div>
+
+                <div class="col-12 mt-4 d-flex justify-content-center align-items-center">
+                  <input type="submit" class="btn kp__btn" value="Daftar">
+                </div>
+              </form>
+            </div>
+          </div> <!-- end row -->
+        </div> <!-- end sign in section -->
+      </div> <!-- end container -->
     </div>
-    <!-- end saran section -->
+    <!-- end form section -->
 
     <!-- footer -->
     <footer class="foot" style="background: linear-gradient(0deg, rgba(38, 86, 190, 0.9), rgba(38, 86, 190, 0.9)), url(assets/img/bg-footer.png)">
