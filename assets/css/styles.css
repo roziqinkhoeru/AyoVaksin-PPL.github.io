@@ -241,6 +241,20 @@ h6 {
   box-shadow: var(--shadow);
 }
 
+.btn__nav i,
+.btn__nav span {
+  color: var(--white);
+}
+
+.btn__nav:hover i,
+.btn__nav:hover span {
+  color: var(--white);
+}
+
+.btn__nav i {
+  font-size: 18px;
+}
+
 /*========== footer ==========*/
 .foot,
 .bg__img {
