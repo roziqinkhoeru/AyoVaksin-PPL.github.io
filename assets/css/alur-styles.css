@@ -111,6 +111,10 @@
   padding-right: 4rem;
 }
 
+.qb__body ol {
+  font-size: var(--fz-2);
+}
+
 /* tablet */
 @media screen and (max-width: 991px) {
   .alur__section {
