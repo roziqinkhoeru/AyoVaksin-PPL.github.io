@@ -1,6 +1,23 @@
+<br/>
+<div align="center">  
+  <p><img src="" width=240/></p>
+  <p><strong>Front End</strong> AyoVaksin Website</p>
+</div>
+<br/>
+
 # 💉 AyoVaksin Project (Front End)
 
 AyoVaksin merupakan aplikasi berbasis web yang digunakan untuk membantu proses vaksinasi dapat berjalan lancar dan mudah untuk mengakses vaksinasi yang tersedia. AyoVaksin (Front End) ini dibuat dengan **HTML (Hypertext Markup Language)**, **CSS (Cascading Style Sheet)**, **JavaScript**, **Bootstrap v.5** etc.
+
+## 🛠 Tools / Library Used
+
+- **HTML (Hypertext Markup Language)**
+- **CSS (Cascading Style Sheet)**
+- **JS (Javascript)**
+- **Visual Studio Code**
+- **Git**
+- **Bootstrap V.5**
+- **FontAwesome v.5**
 
 ## 📛 Badges
 
@@ -8,6 +25,7 @@ AyoVaksin merupakan aplikasi berbasis web yang digunakan untuk membantu proses v
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Bootsrtap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
 
 Folder Structure:
 
