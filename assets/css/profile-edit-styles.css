@@ -1,41 +1,55 @@
 .card__profile {
-  height: 700px;
-  background-color: var(--white);
-  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 15%);
-  border-radius: 15px;
-  padding: 70px;
   max-width: 974px;
+  height: 700px;
   margin: auto;
   margin-bottom: 84px;
+  padding: 70px;
+
+  border-radius: 15px;
+  background-color: var(--white);
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 15%);
 }
+
 .profile__section {
   width: 96%;
 }
+
 .profile__kiri {
-  border-right: 2px solid var(--black);
   display: flex;
   flex-direction: column;
+
   padding-bottom: 14.5rem;
+
+  border-right: 2px solid var(--black);
 }
+
 .profile__saya {
   display: flex;
-  align-items: center;
   flex-direction: row;
+
+  align-items: center;
 }
+
 .icon__text p {
   font-family: var(--ff-head);
   font-size: 18px;
   font-weight: bold;
+
   margin: auto;
+
   color: rgba(0, 0, 0, 0.3);
 }
+
 .icon__text :hover {
-  color: var(--main);
   transition: var(--global-trans);
+
+  color: var(--main);
 }
+
 .profile__tengah {
   padding-left: 3rem;
 }
+
 .id__section {
   margin-bottom: 24px;
 }
@@ -43,30 +57,39 @@
 .judul {
   margin-bottom: 24px;
 }
+
 .icon__section {
-  text-align: center;
-  margin: auto;
   width: 86vw;
+  margin: auto;
   margin-top: 90px;
+
+  text-align: center;
 }
+
 .bg__icon {
   width: 150px;
   height: 150px;
-  background-color: var(--main);
-  border-radius: 100%;
   margin: auto;
+
+  border-radius: 100%;
+  background-color: var(--main);
 }
+
 .icon__content {
   margin: auto;
   padding: 1rem;
 }
+
 .icon__content i {
-  color: var(--white);
   font-size: 100px;
+
+  color: var(--white);
 }
+
 .title__profile {
   margin-top: 28px;
 }
+
 .title__profile p {
   font-family: var(--ff-body);
   font-size: var(--fz-2);
@@ -75,38 +98,50 @@
 .label p {
   font-family: var(--ff-body);
   font-weight: bold;
+
   margin-bottom: 0;
 }
+
 .button__edit {
   display: flex;
-  justify-content: end;
+
   margin-top: 3rem;
+
+  justify-content: end;
 }
+
 .button__batal {
   color: black;
-  background-color: var(--light);
   border-color: var(--light);
+  background-color: var(--light);
 }
+
 .button__simpan {
   color: white;
-  background-color: var(--main);
   border-color: var(--main);
+  background-color: var(--main);
 }
 
 /* mobile */
 @media screen and (max-width: 576px) {
   .profile__kiri {
     padding: 0 0 3rem;
+
     border: none;
   }
+
   .profile__tengah {
     padding-left: 0;
+
     text-align: left;
   }
+
   .profile__kanan {
     padding-left: 0;
+
     text-align: left;
   }
+
   .card__profile {
     height: 932px;
   }
@@ -116,6 +151,7 @@
 @media screen and (max-width: 991px) {
   .profile__kanan {
     padding-left: 0;
+
     text-align: left;
   }
 }

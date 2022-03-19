@@ -2,8 +2,8 @@
 
 /* alur section */
 .alur__section {
-  padding: 0 120px;
   margin: auto;
+  padding: 0 120px;
 }
 
 .alur {
@@ -11,31 +11,40 @@
 }
 
 .alur h2 {
-  margin-bottom: 1.5rem;
-  color: var(--main);
   font-size: 24px;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--main);
 }
 
 .alur__card {
-  border: 3px solid var(--main);
   padding: 84px;
+
+  border: 3px solid var(--main);
   border-radius: 1rem;
 }
 
 .alur__left {
-  border-right: 3px solid var(--main);
   display: flex;
+  flex-direction: column;
+
+  padding: 24px 84px 24px 0;
+
+  text-align: center;
+
+  border-right: 3px solid var(--main);
+
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 24px 84px 24px 0;
-  text-align: center;
 }
 
 .alur__left i {
   font-size: 180px;
-  color: var(--main);
+
   margin-bottom: 1.5rem;
+
+  color: var(--main);
 }
 
 .alur__right {
@@ -47,18 +56,23 @@
 }
 
 .alur__right ol li {
-  margin-bottom: 0.75rem;
   font-size: var(--fz-2);
+
+  margin-bottom: 0.75rem;
 }
+
 .alur__right ul li {
-  margin-bottom: 0.75rem;
   font-size: var(--fz-2);
+
+  margin-bottom: 0.75rem;
+
   list-style-type: square;
 }
 
 .link__disini {
-  transition: var(--global-trans);
   font-weight: 500;
+
+  transition: var(--global-trans);
   text-decoration: underline;
 }
 
@@ -73,36 +87,42 @@
 }
 
 .question__box {
-  border-radius: var(--b-rad);
-  border: 3px solid var(--main);
-  padding: 2.5rem 3rem;
   margin-bottom: 24px;
+  padding: 2.5rem 3rem;
+
+  border: 3px solid var(--main);
+  border-radius: var(--b-rad);
 }
 
 .qb__head {
   font-size: 20px;
   font-weight: 600;
+
   display: flex;
+
   align-items: center;
   justify-content: space-between;
 }
 
-.qb__head[aria-expanded='false'] span {
-  color: var(--black);
+.qb__head[aria-expanded="false"] span {
   transition: var(--global-trans);
+
+  color: var(--black);
 }
 
-.qb__head[aria-expanded='true'] span {
+.qb__head[aria-expanded="true"] span {
   color: var(--main);
 }
 
 .qb__head i {
   font-size: 18px;
+
   margin-left: 20px;
+
   transition: var(--global-trans);
 }
 
-.qb__head[aria-expanded='true'] i {
+.qb__head[aria-expanded="true"] i {
   transform: rotate(135deg);
 }
 
@@ -118,8 +138,8 @@
 /* tablet */
 @media screen and (max-width: 991px) {
   .alur__section {
-    padding: 0;
     width: 96%;
+    padding: 0;
   }
 
   .alur {
@@ -160,6 +180,7 @@
 
   .alur__left {
     padding: 0 0 24px;
+
     border: none;
   }
 

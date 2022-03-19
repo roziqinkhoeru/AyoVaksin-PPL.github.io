@@ -1,53 +1,72 @@
 .header__content__kiri {
   width: 64vw;
   max-width: 940px;
-  text-align: left;
   padding-top: 3rem;
+
+  text-align: left;
 }
+
 .sertif__card {
-  border-radius: 15px;
-  background-color: var(--light);
   margin: 0 1.125rem;
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+
   cursor: pointer;
   transition: var(--global-trans);
+
+  border-radius: 15px;
+  background-color: var(--light);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
 }
+
 .sertif__card:hover {
   transform: translateY(-9px);
 }
+
 .status__section {
-  margin: auto;
-  text-align: center;
   width: 90%;
   margin: auto;
+  margin: auto;
+
+  text-align: center;
 }
 
 .sertif img {
   width: 100%;
+
   border-radius: 15px;
 }
+
 .gambarx img {
   width: 50vw;
 }
+
 .zoom-template {
   display: flex;
-  justify-content: center;
+
   background-color: aqua;
+
+  justify-content: center;
 }
+
 .zoom-container {
   margin: 24px;
+
   border-radius: 15px;
 }
+
 /* background image zoom*/
 .medium-zoom-overlay {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  opacity: 1 !important;
   z-index: 100;
+
+  opacity: 1 !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+
   backdrop-filter: blur(1rem) !important;
 }
+
 /* image zoom */
 .medium-zoom-image--opened {
   z-index: 101;
+
   padding: 1rem;
 }
 
