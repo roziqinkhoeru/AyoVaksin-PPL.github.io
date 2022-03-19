@@ -1,6 +1,6 @@
 <br/>
 <div align="center">  
-  <p><img src="" width=240/></p>
+  <p><img src="https://raw.githubusercontent.com/roziqinkhoeru/AyoVaksin-PPL.github.io/main/assets/img/logo-nav%201.png" width=240/></p>
   <p><strong>Front End</strong> AyoVaksin Website</p>
 </div>
 <br/>
