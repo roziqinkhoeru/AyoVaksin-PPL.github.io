@@ -17,6 +17,7 @@ AyoVaksin merupakan aplikasi berbasis web yang digunakan untuk membantu proses v
 - **Visual Studio Code**
 - **Git**
 - **Bootstrap V.5**
+- **JQuery**
 - **FontAwesome v.5**
 
 ## 📛 Badges
