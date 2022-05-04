@@ -64,8 +64,7 @@ Folder Structure:
 ## 🎯 Features
 
 - Responsives all devices
-- Easy to use
-- Modern Design
+- Modern Design & Easy to use
 
 ## 👨‍💻 Teams
 
